@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensa NF 304 – Ausgabe D vegan?</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f4f4f5;
+      color: #18181b;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #18181b;
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+    }
+    header h1 { font-size: 1.25rem; font-weight: 700; }
+    header p  { font-size: 0.85rem; color: #a1a1aa; margin-top: 0.2rem; }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* ── week block ── */
+    .week { margin-bottom: 1.5rem; }
+
+    .week-header {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #71717a;
+      margin-bottom: 0.5rem;
+    }
+    .week-header.current { color: #2563eb; }
+
+    .week-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+    }
+
+    /* ── day row ── */
+    .day-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid #f4f4f5;
+      transition: background 0.1s;
+    }
+    .day-row:last-child { border-bottom: none; }
+    .day-row.today { background: #eff6ff; }
+
+    /* status badge */
+    .badge {
+      flex-shrink: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 0.1rem;
+    }
+    .badge.vegan     { background: #dcfce7; color: #15803d; }
+    .badge.not_vegan { background: #fee2e2; color: #b91c1c; }
+    .badge.unclear   { background: #fef9c3; color: #a16207; }
+    .badge.closed    { background: #f4f4f5; color: #a1a1aa; }
+
+    .day-content { flex: 1; min-width: 0; }
+
+    .day-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #71717a;
+      margin-bottom: 0.2rem;
+    }
+    .today .day-label { color: #2563eb; }
+
+    .dish-text {
+      font-size: 0.9rem;
+      line-height: 1.45;
+      color: #27272a;
+      white-space: pre-line;
+    }
+    .dish-text.closed-text { color: #a1a1aa; font-style: italic; }
+
+    .dish-price {
+      font-size: 0.78rem;
+      color: #71717a;
+      margin-top: 0.25rem;
+    }
+
+    .allergens {
+      font-size: 0.7rem;
+      color: #a1a1aa;
+      margin-top: 0.15rem;
+    }
+
+    /* ── legend ── */
+    .legend {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+      font-size: 0.8rem;
+      color: #52525b;
+    }
+    .legend span { display: flex; align-items: center; gap: 0.35rem; }
+    .dot {
+      width: 0.75rem; height: 0.75rem;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .dot.vegan     { background: #15803d; }
+    .dot.not_vegan { background: #b91c1c; }
+    .dot.unclear   { background: #a16207; }
+
+    footer {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #a1a1aa;
+      padding-bottom: 2rem;
+    }
+
+    #error-msg {
+      background: #fee2e2;
+      color: #b91c1c;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mensa Neuenheimer Feld 304</h1>
+    <p>Ausgabe D – ist es vegan?</p>
+  </header>
+
+  <main>
+    <div id="error-msg"></div>
+
+    <div class="legend">
+      <span><span class="dot vegan"></span> vegan</span>
+      <span><span class="dot not_vegan"></span> nicht vegan</span>
+      <span><span class="dot unclear"></span> unklar</span>
+    </div>
+
+    <div id="menu"></div>
+
+    <footer id="footer"></footer>
+  </main>
+
+  <script>
+    const WEEKDAY_SHORT = { Montag: "Mo", Dienstag: "Di", Mittwoch: "Mi", Donnerstag: "Do", Freitag: "Fr" };
+    const STATUS_ICON   = { vegan: "✓", not_vegan: "✗", unclear: "?", closed: "–" };
+
+    function parseGermanDate(s) {
+      const [d, m, y] = s.split(".").map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    function isoWeekKey(date) {
+      const d = new Date(date);
+      d.setHours(0, 0, 0, 0);
+      d.setDate(d.getDate() + 3 - (d.getDay() + 6) % 7);
+      const jan4 = new Date(d.getFullYear(), 0, 4);
+      const week = 1 + Math.round(((d - jan4) / 864e5 - 3 + (jan4.getDay() + 6) % 7) / 7);
+      const yr = date.getMonth() === 0 && week > 50 ? date.getFullYear() - 1
+               : date.getMonth() === 11 && week < 3  ? date.getFullYear() + 1
+               : date.getFullYear();
+      return `${yr}-W${String(week).padStart(2, "0")}`;
+    }
+
+    function todayKey() {
+      const t = new Date(); t.setHours(0, 0, 0, 0);
+      return isoWeekKey(t);
+    }
+
+    function formatShortDate(dateObj) {
+      return dateObj.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" });
+    }
+
+    function render(data) {
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const curWeek = todayKey();
+
+      // group by week, skipping weekend-only closed days
+      const weeks = new Map();
+      for (const day of data.days) {
+        const dateObj = parseGermanDate(day.date);
+        const key = isoWeekKey(dateObj);
+        if (!weeks.has(key)) weeks.set(key, []);
+        weeks.get(key).push({ ...day, dateObj });
+      }
+
+      const sortedKeys = [...weeks.keys()].sort();
+
+      // find the first week that is >= current week (to scroll to it)
+      const activeWeek = sortedKeys.find(k => k >= curWeek) || sortedKeys[sortedKeys.length - 1];
+
+      const container = document.getElementById("menu");
+
+      for (const key of sortedKeys) {
+        const days = weeks.get(key).sort((a, b) => a.dateObj - b.dateObj);
+        const isCurrent = key === activeWeek;
+
+        const dates = days.map(d => d.dateObj);
+        const from = formatShortDate(dates[0]);
+        const to   = formatShortDate(dates[dates.length - 1]);
+
+        const section = document.createElement("div");
+        section.className = "week";
+        if (isCurrent) section.id = "current-week";
+
+        const hdr = document.createElement("div");
+        hdr.className = "week-header" + (isCurrent ? " current" : "");
+        hdr.textContent = isCurrent
+          ? `▶ Diese Woche  ${from} – ${to}`
+          : `Woche  ${from} – ${to}`;
+        section.appendChild(hdr);
+
+        const card = document.createElement("div");
+        card.className = "week-card";
+
+        for (const day of days) {
+          const isToday = day.dateObj.getTime() === today.getTime();
+          const row = document.createElement("div");
+          row.className = "day-row" + (isToday ? " today" : "");
+
+          const badge = document.createElement("div");
+          badge.className = `badge ${day.vegan_status}`;
+          badge.textContent = STATUS_ICON[day.vegan_status] ?? "?";
+
+          const content = document.createElement("div");
+          content.className = "day-content";
+
+          const label = document.createElement("div");
+          label.className = "day-label";
+          label.textContent = `${WEEKDAY_SHORT[day.weekday] ?? day.weekday}  ${day.date.slice(0, 5)}`;
+          if (isToday) label.textContent += "  ← heute";
+          content.appendChild(label);
+
+          if (day.closed) {
+            const txt = document.createElement("div");
+            txt.className = "dish-text closed-text";
+            txt.textContent = "Geschlossen";
+            content.appendChild(txt);
+          } else {
+            for (const dish of day.dishes) {
+              const txt = document.createElement("div");
+              txt.className = "dish-text";
+              // show only first line to keep it compact; full text on title
+              const firstLine = dish.text.split("\n")[0];
+              txt.textContent = firstLine;
+              txt.title = dish.text;
+              content.appendChild(txt);
+
+              if (dish.price_studi) {
+                const price = document.createElement("div");
+                price.className = "dish-price";
+                price.textContent = dish.price_studi.replace(".", ",") + " € (Studi)";
+                content.appendChild(price);
+              }
+
+              if (dish.allergens) {
+                const alg = document.createElement("div");
+                alg.className = "allergens";
+                alg.textContent = "Allergene: " + dish.allergens;
+                content.appendChild(alg);
+              }
+            }
+          }
+
+          row.appendChild(badge);
+          row.appendChild(content);
+          card.appendChild(row);
+        }
+
+        section.appendChild(card);
+        container.appendChild(section);
+      }
+
+      if (data.last_updated) {
+        const dt = new Date(data.last_updated);
+        document.getElementById("footer").textContent =
+          "Zuletzt aktualisiert: " + dt.toLocaleString("de-DE");
+      }
+
+      // smooth-scroll to current week
+      const target = document.getElementById("current-week");
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    fetch("menu.json")
+      .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
+      .then(render)
+      .catch(err => {
+        const el = document.getElementById("error-msg");
+        el.textContent = "Menüdaten konnten nicht geladen werden: " + err.message;
+        el.style.display = "block";
+      });
+  </script>
+</body>
+</html>
