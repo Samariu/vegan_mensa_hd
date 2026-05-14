@@ -198,9 +198,9 @@
       const today = new Date(); today.setHours(0, 0, 0, 0);
       const curWeek = todayKey();
 
-      // group by week, skipping weekend-only closed days
+      // group by week, showing only today and future days
       const weeks = new Map();
-      for (const day of data.days) {
+      for (const day of data.days.filter(d => parseGermanDate(d.date) >= today)) {
         const dateObj = parseGermanDate(day.date);
         const key = isoWeekKey(dateObj);
         if (!weeks.has(key)) weeks.set(key, []);
