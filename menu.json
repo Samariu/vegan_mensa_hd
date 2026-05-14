@@ -1,149 +1,7 @@
 {
-  "last_updated": "2026-04-28T14:44:13",
-  "next_fetch_date": "2026-05-15",
+  "last_updated": "2026-05-14T18:45:51",
+  "next_fetch_date": "2026-05-29",
   "days": [
-    {
-      "date": "27.04.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (GlWe,Sn)",
-          "text_en": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (GlWe,Sn)",
-          "price_studi": "2.90",
-          "allergens": "GlWe,Sn",
-          "vegan_status": "unclear"
-        }
-      ],
-      "vegan_status": "unclear"
-    },
-    {
-      "date": "28.04.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "veganes Schnitzel auf Weizenproteinbasis mit Spätzle und Rahmsoße, dazu ein Salat (1,GlWe,So, 3,5,Sf)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "1,GlWe,So, 3,5,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "29.04.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
-          "text_en": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
-          "price_studi": "2.90",
-          "allergens": "1,GlWe,ML",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "30.04.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Kichererbsen-Couscous-Pfanne mit Gemüse und Hirtenkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "GlWe,ML,Se,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "01.05.2026",
-      "weekday": "Freitag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
-    },
-    {
-      "date": "04.05.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (3,Se,Sn)",
-          "text_en": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (3,Se,Sn)",
-          "price_studi": "2.90",
-          "allergens": "3,Se,Sn",
-          "vegan_status": "unclear"
-        }
-      ],
-      "vegan_status": "unclear"
-    },
-    {
-      "date": "05.05.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Brew Bites Geschnetzteltes nach Züricher Art auf Gernen- und Erbsenproteinbasis mit Späzle, dazu ein Salat(5,26,GlWe,GlGe,So,Sf,3,5,Sf)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "5,26,GlWe,GlGe,So,Sf,3,5,Sf",
-          "vegan_status": "unclear"
-        }
-      ],
-      "vegan_status": "unclear"
-    },
-    {
-      "date": "06.05.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (ML)",
-          "text_en": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (ML)",
-          "price_studi": "2.90",
-          "allergens": "ML",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "07.05.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "hausgemachte Pasta mit Tofu nach Carbonara Art (GlWe,GlHa,So,3,5,Sf)",
-          "text_en": "homemade pasta with vegan carbonara style sauce (GlWe,GlHa,So)\ncabbage salad (3,5,Sf)",
-          "price_studi": "2.90",
-          "allergens": "GlWe,GlHa,So,3,5,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "08.05.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Mit Reis und Gemüse gefüllte Paprika dazu Tomatensoße, Rosmarinkartoffeln und ein Stück Obst (1)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "1",
-          "vegan_status": "unclear"
-        }
-      ],
-      "vegan_status": "unclear"
-    },
     {
       "date": "11.05.2026",
       "weekday": "Montag",
@@ -180,10 +38,10 @@
       "closed": false,
       "dishes": [
         {
-          "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(3,5,12,26,So,Sf)",
+          "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(vegan,3,5,12,26,So,Sf)",
           "text_en": "vegan stew asia style with vegetable and rice (3,5,12,26,So,Sf)",
           "price_studi": "2.90",
-          "allergens": "3,5,12,26,So,Sf",
+          "allergens": "vegan,3,5,12,26,So,Sf",
           "vegan_status": "vegan"
         }
       ],
@@ -210,6 +68,148 @@
         }
       ],
       "vegan_status": "not_vegan"
+    },
+    {
+      "date": "18.05.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Blumenkohl Kartoffelcurry mit Reis, dazu ein Stück Obst (vegan,Sn)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "vegan,Sn",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "19.05.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Tortellini mit Tomaten-Basilikumrahm und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "GlWe,ML,Se,3,5,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "20.05.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Linsen + Spätzle, dazu ein Stück Obst (vegan,3,5,GlWe,Se,Sn,Sf)",
+          "text_en": "Lentils + spaetzle (3,5,GlWe,Se,Sn,Sf)",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,5,GlWe,Se,Sn,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "21.05.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "überbackener Gemüse-Gnocchiauflauf, dazu ein Salat (GlWe,ML,3,5,Sf)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "GlWe,ML,3,5,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "22.05.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Kichererbseneintopf mit Gemüse, dazu ein Stück Obst (vegan,3,Se)",
+          "text_en": "Chickpe stew with vegetables (3,Se)",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,Se",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "25.05.2026",
+      "weekday": "Montag",
+      "closed": true,
+      "dishes": [],
+      "vegan_status": "closed"
+    },
+    {
+      "date": "26.05.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "vegane Currywurst auf Erbseneiweisbasis mit Ofenkartoffeln, dazu ein Stück Obst (vegan,1,3,8,12,21,Se,Sn)",
+          "text_en": "vegan sausage in curry sauce with baked potatoes (1,3,8,12,21,Se,Sn)",
+          "price_studi": "2.90",
+          "allergens": "vegan,1,3,8,12,21,Se,Sn",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "27.05.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Schupfnudelpfanne mit Gemüse, Pilze und Tofu, dazu ein Salat (vegan,1,GlWe,So,3,5,Sf)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "vegan,1,GlWe,So,3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "28.05.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+          "text_en": "homemade pasta with lentil sauce and grated cheese (GlWe,ML,Se,3,5,Sf)",
+          "price_studi": "2.90",
+          "allergens": "GlWe,ML,Se,3,5,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "29.05.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
+          "text_en": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
+          "price_studi": "2.90",
+          "allergens": "vegan,So",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     }
   ]
 }
