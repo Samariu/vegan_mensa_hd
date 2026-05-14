@@ -54,11 +54,19 @@
       align-items: flex-start;
       gap: 0.75rem;
       padding: 0.85rem 1rem;
-      border-bottom: 1px solid #f4f4f5;
+      border-bottom: 1px solid rgba(0,0,0,.06);
       transition: background 0.1s;
     }
     .day-row:last-child { border-bottom: none; }
-    .day-row.today { background: #eff6ff; }
+
+    .day-row.vegan     { background: #f0fdf4; }
+    .day-row.not_vegan { background: #fef2f2; }
+
+    /* today: deeper shade + coloured left bar */
+    .day-row.today.vegan     { background: #dcfce7; box-shadow: inset 3px 0 0 #15803d; }
+    .day-row.today.not_vegan { background: #fee2e2; box-shadow: inset 3px 0 0 #b91c1c; }
+    .day-row.today.unclear   { background: #eff6ff; box-shadow: inset 3px 0 0 #2563eb; }
+    .day-row.today.closed    { background: #f4f4f5; box-shadow: inset 3px 0 0 #71717a; }
 
     /* status badge */
     .badge {
@@ -239,7 +247,7 @@
         for (const day of days) {
           const isToday = day.dateObj.getTime() === today.getTime();
           const row = document.createElement("div");
-          row.className = "day-row" + (isToday ? " today" : "");
+          row.className = `day-row ${day.vegan_status}${isToday ? " today" : ""}`;
 
           const badge = document.createElement("div");
           badge.className = `badge ${day.vegan_status}`;
