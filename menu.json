@@ -1,74 +1,7 @@
 {
-  "last_updated": "2026-05-14T18:45:51",
-  "next_fetch_date": "2026-05-29",
+  "last_updated": "2026-05-18T10:46:37",
+  "next_fetch_date": "2026-06-05",
   "days": [
-    {
-      "date": "11.05.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "afrikanischer Erdnusseintopf mit Kartoffeln, dazu ein Stück Obst\n(vegan,Er,Se,So,3)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "vegan,Er,Se,So,3",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "12.05.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
-          "text_en": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
-          "price_studi": "2.90",
-          "allergens": "Ei,GlWe,ML,Sf,1,3,5",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "13.05.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(vegan,3,5,12,26,So,Sf)",
-          "text_en": "vegan stew asia style with vegetable and rice (3,5,12,26,So,Sf)",
-          "price_studi": "2.90",
-          "allergens": "vegan,3,5,12,26,So,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "14.05.2026",
-      "weekday": "Donnerstag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
-    },
-    {
-      "date": "15.05.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Kartoffel-Lauch Tortilla mit Ajvardip, dazu ein Salat (Ei,ML,3,5,Sf)",
-          "text_en": "cabbage salad (3,5,Sf)",
-          "price_studi": "2.90",
-          "allergens": "Ei,ML,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
     {
       "date": "18.05.2026",
       "weekday": "Montag",
@@ -206,6 +139,73 @@
           "text_en": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
           "price_studi": "2.90",
           "allergens": "vegan,So",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "01.06.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Auberginen Kichererbsencurry mit Mandelreis, dazu ein Stück Obst (vegan,NuMa)",
+          "text_en": "Auberginen Kichererbsencurry mit Mandelreis, dazu ein Stück Obst (vegan,NuMa)",
+          "price_studi": "2.90",
+          "allergens": "vegan,NuMa",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "02.06.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Gemüsefrikadelle, Paprikasoße und Salzkartoffeln, dazu ein Salat (vegan,1,GlWe,Se,3,5,Sf)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "vegan,1,GlWe,Se,3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "03.06.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Ofengemüse mit Rosmarinkartoffeln und einem veganen Kräuterdip, dazu ein Stück Obst(vegan,So,Sn)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "vegan,So,Sn",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "04.06.2026",
+      "weekday": "Donnerstag",
+      "closed": true,
+      "dishes": [],
+      "vegan_status": "closed"
+    },
+    {
+      "date": "05.06.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Gnocchi mit Tomatenpestosoße, Oliven und Kräuterpesto, dazu ein Stück Obst (vegan,3,5,6,GlWe,So,Sf)",
+          "text_en": "Gnocchi mit Tomatenpestosoße, Oliven und Kräuterpesto, dazu ein Stück Obst (vegan,3,5,6,GlWe,So,Sf)",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,5,6,GlWe,So,Sf",
           "vegan_status": "vegan"
         }
       ],
