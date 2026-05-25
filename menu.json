@@ -1,82 +1,7 @@
 {
-  "last_updated": "2026-05-18T10:46:37",
-  "next_fetch_date": "2026-06-05",
+  "last_updated": "2026-05-25T10:56:13",
+  "next_fetch_date": "2026-06-12",
   "days": [
-    {
-      "date": "18.05.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Blumenkohl Kartoffelcurry mit Reis, dazu ein Stück Obst (vegan,Sn)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "vegan,Sn",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "19.05.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Tortellini mit Tomaten-Basilikumrahm und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "GlWe,ML,Se,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "20.05.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Linsen + Spätzle, dazu ein Stück Obst (vegan,3,5,GlWe,Se,Sn,Sf)",
-          "text_en": "Lentils + spaetzle (3,5,GlWe,Se,Sn,Sf)",
-          "price_studi": "2.90",
-          "allergens": "vegan,3,5,GlWe,Se,Sn,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "21.05.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "überbackener Gemüse-Gnocchiauflauf, dazu ein Salat (GlWe,ML,3,5,Sf)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "GlWe,ML,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "22.05.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Kichererbseneintopf mit Gemüse, dazu ein Stück Obst (vegan,3,Se)",
-          "text_en": "Chickpe stew with vegetables (3,Se)",
-          "price_studi": "2.90",
-          "allergens": "vegan,3,Se",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
     {
       "date": "25.05.2026",
       "weekday": "Montag",
@@ -206,6 +131,81 @@
           "text_en": "Gnocchi mit Tomatenpestosoße, Oliven und Kräuterpesto, dazu ein Stück Obst (vegan,3,5,6,GlWe,So,Sf)",
           "price_studi": "2.90",
           "allergens": "vegan,3,5,6,GlWe,So,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "08.06.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (vegan,GlWe,Se,Sn,3)",
+          "text_en": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (vegan,GlWe,Se,Sn,3)",
+          "price_studi": "2.90",
+          "allergens": "vegan,GlWe,Se,Sn,3",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "09.06.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "veganes Schnitzel auf Weizenproteinbasis mit Spätzle und Rahmsoße, dazu ein Salat (vegan,1,GlWe,So, 3,5,Sf)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "vegan,1,GlWe,So, 3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "10.06.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
+          "text_en": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
+          "price_studi": "2.90",
+          "allergens": "1,GlWe,ML",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "11.06.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Kichererbsen-Couscous-Pfanne mit Gemüse und Hirtenkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "GlWe,ML,Se,3,5,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "12.06.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "veganer Gaisburger Marsch mit Baguette, dazu ein Stück Obst (vegan,3,GlWe,Se)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,GlWe,Se",
           "vegan_status": "vegan"
         }
       ],
