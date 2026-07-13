@@ -1,82 +1,7 @@
 {
-  "last_updated": "2026-07-06T11:11:48",
-  "next_fetch_date": "2026-07-24",
+  "last_updated": "2026-07-13T09:53:26",
+  "next_fetch_date": "2026-07-31",
   "days": [
-    {
-      "date": "06.07.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Ratatouille mit Kräuterreis und Rucola, dazu ein Stück Obst (vegan)",
-          "text_en": "Ratatouille with herbed rice and rucola, served with a piece of fruit",
-          "price_studi": "2.90",
-          "allergens": "vegan",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "07.07.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Schupfnudelpfanne mit Gemüse, Pilze und Tofu, dazu ein Salat (vegan,1,GlWe,So,3,5,Sf)",
-          "text_en": "Schupfnudel pan with vegetables, mushrooms and tofu, served with a side salad.",
-          "price_studi": "2.90",
-          "allergens": "vegan,1,GlWe,So,3,5,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "08.07.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "vegane Currywurst auf Erbseneiweisbasis mit Ofenkartoffeln, dazu ein Stück Obst (vegan,1,3,8,12,21,Se,Sn)",
-          "text_en": "Vegan Currywurst (pea based protein) with baked potato, served with a piece of fruit",
-          "price_studi": "2.90",
-          "allergens": "vegan,1,3,8,12,21,Se,Sn",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "09.07.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
-          "text_en": "Homemade lentil Bolognese pasta and cheese, served with a side salad.",
-          "price_studi": "2.90",
-          "allergens": "GlWe,ML,Se,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "10.07.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
-          "text_en": "Chili sin carne with rice, served with a piece of fruit.",
-          "price_studi": "2.90",
-          "allergens": "vegan,So",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
     {
       "date": "13.07.2026",
       "weekday": "Montag",
@@ -226,6 +151,81 @@
         }
       ],
       "vegan_status": "vegan"
+    },
+    {
+      "date": "27.07.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (vegan,3,Se,Sn)",
+          "text_en": "Green lentil and vegetable curry with rice, served with a piece of fruit.",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,Se,Sn",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "28.07.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Brew Bites Geschnetzteltes nach Züricher Art auf Gernen- und Erbsenproteinbasis mit Späzle, dazu ein Salat(vegan,5,26,GlWe,GlGe,So,Sf,3,5,Sf)",
+          "text_en": "Brew bite strips (pea protein) Zürich style with spätzle, served with a side salad.",
+          "price_studi": "2.90",
+          "allergens": "vegan,5,26,GlWe,GlGe,So,Sf,3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "29.07.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (3,Se,ML)",
+          "text_en": "Buckwheat patties with tomato and bell pepper rice and a cucumber yoghurt sauce, served with a piece of fruit.",
+          "price_studi": "2.90",
+          "allergens": "3,Se,ML",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "30.07.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "hausgemachte Pasta mit Tofu nach Carbonara Art (vegan,GlWe,GlHa,So,3,5,Sf)",
+          "text_en": "Homemade tofu carbonara",
+          "price_studi": "2.90",
+          "allergens": "vegan,GlWe,GlHa,So,3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "31.07.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Mit Reis und Gemüse gefüllte Paprika dazu Tomatensoße, Rosmarinkartoffeln und ein Stück Obst (1)",
+          "text_en": "Vegetable and rice stuffed pepper with a tomato sauce, rosemary potatoes, served with a piece of fruit.",
+          "price_studi": "2.90",
+          "allergens": "1",
+          "vegan_status": "unclear"
+        }
+      ],
+      "vegan_status": "unclear"
     }
   ]
 }
