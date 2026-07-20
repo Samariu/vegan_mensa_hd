@@ -1,82 +1,7 @@
 {
-  "last_updated": "2026-07-13T09:53:26",
-  "next_fetch_date": "2026-07-31",
+  "last_updated": "2026-07-20T09:41:14",
+  "next_fetch_date": "2026-08-07",
   "days": [
-    {
-      "date": "13.07.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Auberginen Kichererbsencurry mit Mandelreis, dazu ein Stück Obst (vegan,NuMa)",
-          "text_en": "Chickpea and aubergine curry with almond rice, served with a piece of fruit",
-          "price_studi": "2.90",
-          "allergens": "vegan,NuMa",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "14.07.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Gemüsefrikadelle, Paprikasoße und Salzkartoffeln, dazu ein Salat (vegan,1,GlWe,Se,3,5,Sf)",
-          "text_en": "Vegetable patty with bell pepper sauce and boiled potatoes, served with a side salad.",
-          "price_studi": "2.90",
-          "allergens": "vegan,1,GlWe,Se,3,5,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "15.07.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Ofengemüse mit Rosmarinkartoffeln und einem veganen Kräuterdip, dazu ein Stück Obst(vegan,So,Sn)",
-          "text_en": "Baked vegetables with rosemary potatoes and a vegan herb dip, served with a piece of fruit",
-          "price_studi": "2.90",
-          "allergens": "vegan,So,Sn",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "16.07.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Mac + Cheese dazu ein Salat (1,GlWe,So,ML,3,5,Sf)",
-          "text_en": "Mac and Cheese, served with a side salad.",
-          "price_studi": "2.90",
-          "allergens": "1,GlWe,So,ML,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "17.07.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Gnocchi mit Tomatenpestosoße, Oliven und Kräuterpesto, dazu ein Stück Obst (vegan,3,5,6,GlWe,So,Sf)",
-          "text_en": "Gnocchi in a tomato and pesto sauce, olive and herb pest, served with a piece of fruit.",
-          "price_studi": "2.90",
-          "allergens": "vegan,3,5,6,GlWe,So,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
     {
       "date": "20.07.2026",
       "weekday": "Montag",
@@ -226,6 +151,81 @@
         }
       ],
       "vegan_status": "unclear"
+    },
+    {
+      "date": "03.08.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "afrikanischer Erdnusseintopf mit Kartoffeln, dazu ein Stück Obst\n(vegan,Er,Se,So,3)",
+          "text_en": "African peanut stew, served with a piece of fruit",
+          "price_studi": "2.90",
+          "allergens": "vegan,Er,Se,So,3",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "04.08.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
+          "text_en": "bread dumplings with a cream of mushroom and herb sauce, served with a side salad.",
+          "price_studi": "2.90",
+          "allergens": "Ei,GlWe,ML,Sf,1,3,5",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "05.08.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(vegan,3,5,12,26,So,Sf)",
+          "text_en": "Sweet and sour soya strips with vegetables and rice, served with a piece of fruit.",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,5,12,26,So,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "06.08.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat(GlWe,GlDi,Ei,ML,3,5,Sf)",
+          "text_en": "Cheese spätzle with fried onions, served with a side salad.",
+          "price_studi": "2.90",
+          "allergens": "GlWe,GlDi,Ei,ML,3,5,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "07.08.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Kartoffel-Lauch Tortilla mit Ajvardip, dazu ein Salat (Ei,ML,3,5,Sf)",
+          "text_en": "Potato and Leek tortilla with Ajvar dip, served with a side salad.",
+          "price_studi": "2.90",
+          "allergens": "Ei,ML,3,5,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
     }
   ]
 }
