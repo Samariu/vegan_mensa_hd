@@ -5,7 +5,7 @@ and writes a processed menu.json for the GitHub Pages site.
 
 Set the MENSA_URL environment variable (or the Actions variable) to the
 URL of the mensa page that embeds window.mensaData.
-Example: https://www.stw-ma.de/Essen+_Trinken-p-7.html
+Example: https://www.stw.uni-heidelberg.de/essen-trinken/speiseplan/
 """
 import json
 import os
@@ -67,7 +67,6 @@ def parse_date(date_str: str) -> datetime:
 def process_data(raw: dict) -> dict:
     mensa = raw.get(MENSA_NAME, {})
     days = []
-    last_date_obj = None
 
     for date_str, day_data in sorted(mensa.items(), key=lambda x: parse_date(x[0])):
         tag = day_data.get("tag", "")
@@ -117,9 +116,11 @@ def process_data(raw: dict) -> dict:
             "dishes": dishes,
             "vegan_status": day_status,
         })
-        last_date_obj = parse_date(date_str)
 
-    next_fetch_date = last_date_obj.strftime("%Y-%m-%d") if last_date_obj else None
+    # Last date covered by the scrape — closed days count too, otherwise an
+    # all-closed week (placeholder data) would leave this null.
+    last_date = max((parse_date(d["date"]) for d in days), default=None)
+    next_fetch_date = last_date.strftime("%Y-%m-%d") if last_date else None
 
     return {
         "last_updated": datetime.now().isoformat(timespec="seconds"),
@@ -143,11 +144,20 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
+    closed = sum(1 for d in result["days"] if d["closed"])
+    open_ = len(result["days"]) - closed
     print(
         f"Wrote {len(result['days'])} days → {OUTPUT_FILE}  "
-        f"(next fetch: {result['next_fetch_date']})",
+        f"({open_} open, {closed} closed; last date: {result['next_fetch_date']})",
         file=sys.stderr,
     )
+    if open_ == 0 and closed:
+        print(
+            "WARNING: every day is marked closed. This is normal during the "
+            "semester break, but can also mean the menu has not been published "
+            "yet — the daily re-run will pick it up once it is.",
+            file=sys.stderr,
+        )
 
 
 if __name__ == "__main__":

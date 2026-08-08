@@ -12,7 +12,7 @@ A GitHub Pages site that answers "is the vegan option available today at Mensa N
 ## Running the scraper locally
 
 ```bash
-MENSA_URL="<the stw-ma.de page URL>" python scraper.py
+MENSA_URL="<the stw.uni-heidelberg.de page URL>" python scraper.py
 ```
 
 `MENSA_URL` must be set; the script exits with an error otherwise. The output is written to `menu.json` in the working directory.
@@ -29,14 +29,18 @@ The day-level `vegan_status` is `vegan` if any dish is vegan, `not_vegan` if any
 
 ## Automation
 
-`.github/workflows/update-menu.yml` runs Mon–Fri at 06:30 UTC. It reads `next_fetch_date` from `menu.json` and skips the run if today is before that date (avoids redundant fetches mid-week). `next_fetch_date` is set to the last date present in the scraped data.
+`.github/workflows/update-menu.yml` runs **daily** at 06:30 UTC and unconditionally re-scrapes, committing `menu.json` only when it actually changed.
+
+Daily rather than weekly on purpose: the Studierendenwerk sometimes publishes a menu week late and serves `geschlossen: true` placeholders for every day in the meantime. Under the old weekly schedule one unlucky Monday snapshot froze "closed" onto the site for a full week. A daily re-run self-heals within 24h.
+
+`next_fetch_date` in `menu.json` is informational only (the last date present in the scraped data); nothing reads it any more.
 
 The `MENSA_URL` is stored as a GitHub Actions repository variable (not a secret), under Settings → Variables → Actions.
 
 ## Data flow
 
 ```
-stw-ma.de page (window.mensaData)
+stw.uni-heidelberg.de page (window.mensaData)
   → scraper.py
     → menu.json  (committed by the workflow bot)
       → index.html (fetched client-side, rendered in browser)

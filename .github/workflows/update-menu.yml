@@ -1,9 +1,12 @@
 name: Update Mensa Menu
 
 on:
-  # Run every Monday at 06:30 UTC.
+  # Run every day at 06:30 UTC (08:30 local in summer).
+  # Daily rather than weekly: the Studierendenwerk sometimes publishes a week
+  # late and serves `geschlossen: true` placeholders in the meantime. A weekly
+  # scrape would freeze those placeholders in for a full week.
   schedule:
-    - cron: '30 6 * * 1'
+    - cron: '30 6 * * *'
   # Allow manual trigger from the Actions tab.
   workflow_dispatch:
 
@@ -30,7 +33,7 @@ jobs:
         env:
           # Set this variable in Settings → Variables → Actions → New repository variable
           # Value: the URL of the mensa page that contains window.mensaData
-          # e.g. https://www.stw-ma.de/Essen+_Trinken-p-7.html
+          # e.g. https://www.stw.uni-heidelberg.de/essen-trinken/speiseplan/
           MENSA_URL: ${{ vars.MENSA_URL }}
         run: python scraper.py
 
