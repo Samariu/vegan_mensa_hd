@@ -1,111 +1,231 @@
 {
-  "last_updated": "2026-08-25T07:25:44",
+  "last_updated": "2026-08-26T07:26:31",
   "next_fetch_date": "2026-09-11",
   "days": [
     {
       "date": "24.08.2026",
       "weekday": "Montag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Auberginen Kichererbsencurry mit Mandelreis, dazu ein Stück Obst (vegan,NuMa)",
+          "text_en": "Chickpea and aubergine curry with almond rice, served with a piece of fruit",
+          "price_studi": "2.90",
+          "allergens": "vegan,NuMa",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "25.08.2026",
       "weekday": "Dienstag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Gemüsefrikadelle, Paprikasoße und Salzkartoffeln, dazu ein Salat (vegan,1,GlWe,Se,3,5,Sf)",
+          "text_en": "Vegetable patty with bell pepper sauce and boiled potatoes, served with a side salad.",
+          "price_studi": "2.90",
+          "allergens": "vegan,1,GlWe,Se,3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "26.08.2026",
       "weekday": "Mittwoch",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Ofengemüse mit Rosmarinkartoffeln und einem veganen Kräuterdip, dazu ein Stück Obst(vegan,So,Sn)",
+          "text_en": "Baked vegetables with rosemary potatoes and a vegan herb dip, served with a piece of fruit",
+          "price_studi": "2.90",
+          "allergens": "vegan,So,Sn",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "27.08.2026",
       "weekday": "Donnerstag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Mac + Cheese dazu ein Salat (1,GlWe,So,ML,3,5,Sf)",
+          "text_en": "Mac and Cheese, served with a side salad.",
+          "price_studi": "2.90",
+          "allergens": "1,GlWe,So,ML,3,5,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
     },
     {
       "date": "28.08.2026",
       "weekday": "Freitag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Gnocchi mit Tomatenpestosoße, Oliven und Kräuterpesto, dazu ein Stück Obst (vegan,3,5,6,GlWe,So,Sf)",
+          "text_en": "Gnocchi in a tomato and pesto sauce, olive and herb pest, served with a piece of fruit.",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,5,6,GlWe,So,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "31.08.2026",
       "weekday": "Montag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (vegan,GlWe,Se,Sn,3)",
+          "text_en": "Sautéed maultaschen with potato salad, served with a piece of fruit.",
+          "price_studi": "2.90",
+          "allergens": "vegan,GlWe,Se,Sn,3",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "01.09.2026",
       "weekday": "Dienstag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "veganes Schnitzel mit Spätzle und Pilzrahmsoße, dazu ein Salat (vegan,1,GlWe, GlHa, So, 3,5,Sf)",
+          "text_en": "Vegan Schnitzel with spätzle and a creamy sauce, served with a side salad.  (vegan,1,GlWe, GlHa, So, 3,5,Sf)",
+          "price_studi": "2.90",
+          "allergens": "vegan,1,GlWe, GlHa, So, 3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "02.09.2026",
       "weekday": "Mittwoch",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
+          "text_en": "Vegetable and Pasta bake with a crème fraiche sauce, served with a piece of fruit.",
+          "price_studi": "2.90",
+          "allergens": "1,GlWe,ML",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
     },
     {
       "date": "03.09.2026",
       "weekday": "Donnerstag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Kichererbsen-Couscous-Pfanne mit Gemüse und Hirtenkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+          "text_en": "Chick pea and couscous pan with vegetables and sheep cheese, served with a side salad.",
+          "price_studi": "2.90",
+          "allergens": "GlWe,ML,Se,3,5,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
     },
     {
       "date": "04.09.2026",
       "weekday": "Freitag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "veganer Gaisburger Marsch mit Baguette, dazu ein Stück Obst (vegan,3,GlWe,Se)",
+          "text_en": "Vegan Gaisberger stew with baguette, served with a piece of fruit",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,GlWe,Se",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "07.09.2026",
       "weekday": "Montag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (vegan,3,Se,Sn)",
+          "text_en": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (vegan,3,Se,Sn)",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,Se,Sn",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "08.09.2026",
       "weekday": "Dienstag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Brew Bites Geschnetzteltes nach Züricher Art auf Gernen- und Erbsenproteinbasis mit Späzle, dazu ein Salat(vegan,5,26,GlWe,GlGe,So,Sf,3,5,Sf)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "vegan,5,26,GlWe,GlGe,So,Sf,3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "09.09.2026",
       "weekday": "Mittwoch",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (3,Se,ML)",
+          "text_en": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (3,Se,ML)",
+          "price_studi": "2.90",
+          "allergens": "3,Se,ML",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
     },
     {
       "date": "10.09.2026",
       "weekday": "Donnerstag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "hausgemachte Pasta mit Tofu nach Carbonara Art (vegan,GlWe,GlHa,So,3,5,Sf)",
+          "text_en": "homemade pasta with vegan carbonara style sauce (GlWe,GlHa,So)\ncabbage salad (3,5,Sf)",
+          "price_studi": "2.90",
+          "allergens": "vegan,GlWe,GlHa,So,3,5,Sf",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     },
     {
       "date": "11.09.2026",
       "weekday": "Freitag",
-      "closed": true,
-      "dishes": [],
-      "vegan_status": "closed"
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Mit Reis und Gemüse gefüllte Paprika dazu Tomatensoße, Rosmarinkartoffeln und ein Stück Obst (1)",
+          "text_en": "",
+          "price_studi": "2.90",
+          "allergens": "1",
+          "vegan_status": "unclear"
+        }
+      ],
+      "vegan_status": "unclear"
     }
   ]
 }
