@@ -1,82 +1,7 @@
 {
-  "last_updated": "2026-09-20T11:43:43",
-  "next_fetch_date": "2026-10-02",
+  "last_updated": "2026-09-21T13:11:36",
+  "next_fetch_date": "2026-10-09",
   "days": [
-    {
-      "date": "14.09.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "afrikanischer Erdnusseintopf mit Kartoffeln, dazu ein Stück Obst\n(vegan,Er,Se,So,3)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "vegan,Er,Se,So,3",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "15.09.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
-          "text_en": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
-          "price_studi": "2.90",
-          "allergens": "Ei,GlWe,ML,Sf,1,3,5",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "16.09.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(vegan,3,5,12,26,So,Sf)",
-          "text_en": "vegan stew asia style with vegetable and rice (3,5,12,26,So,Sf)",
-          "price_studi": "2.90",
-          "allergens": "vegan,3,5,12,26,So,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "17.09.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat(GlWe,GlDi,Ei,ML,3,5,Sf)",
-          "text_en": "cheese spaetzle with fried onions (GlWe,GlDi,Ei,ML)\ncabbage salad (3,5,Sf)",
-          "price_studi": "2.90",
-          "allergens": "GlWe,GlDi,Ei,ML,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "18.09.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Kartoffel-Lauch Tortilla mit Ajvardip, dazu ein Salat (Ei,ML,3,5,Sf)",
-          "text_en": "cabbage salad (3,5,Sf)",
-          "price_studi": "2.90",
-          "allergens": "Ei,ML,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
     {
       "date": "21.09.2026",
       "weekday": "Montag",
@@ -222,6 +147,81 @@
           "text_en": "Chili sin carne with rice, served with a piece of fruit.",
           "price_studi": "2.90",
           "allergens": "vegan,So",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "05.10.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Kichererbsencurry mit Spinat dazu Reis und ein Stück Obst (vegan)",
+          "text_en": "Chickpea curry with spinach and rice, plus a piece of fruit (vegan)",
+          "price_studi": "2.90",
+          "allergens": "vegan",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "06.10.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Kartoffelpfanne mit Bohnen und Gemüse dazu Kräuterdip und ein Salat (vegan,Sf,Sn,So,3,5)",
+          "text_en": "Potato pan with beans and vegetables and herb dip, plus a salad (vegan,3,5,Sf,So,Sn)",
+          "price_studi": "2.90",
+          "allergens": "vegan,Sf,Sn,So,3,5",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "07.10.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "überbackener Pastaauflauf mit Pilzen + karamelisierten Zwiebeln, dazu ein Stück Obst (1,3,GlWe,ML,Se)",
+          "text_en": "Pasta bake with mushrooms, caramelized onions, herbs and cheese, plus a piece of fruit (1,3,GlWe,ML,Se)",
+          "price_studi": "2.90",
+          "allergens": "1,3,GlWe,ML,Se",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "08.10.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat\n(Ei,GlWe,ML,Sf,3,5)",
+          "text_en": "cheese spaetzle with fried onions, plus a salad (3,5,Sf,GlWe,GlDi,Ei,ML)",
+          "price_studi": "2.90",
+          "allergens": "Ei,GlWe,ML,Sf,3,5",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "09.10.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Erbseneintopf mit Brötchen, dazu ein Stück Obst (vegan,3,GlWe,GlGe,Se)",
+          "text_en": "Pea stew with Kaiser rolls, plus a piece of fruit (vegan,3,GlWe,GlGe,Se)",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,GlWe,GlGe,Se",
           "vegan_status": "vegan"
         }
       ],
