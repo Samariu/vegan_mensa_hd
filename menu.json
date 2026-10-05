@@ -1,82 +1,7 @@
 {
-  "last_updated": "2026-10-04T12:45:22",
-  "next_fetch_date": "2026-10-16",
+  "last_updated": "2026-10-05T15:09:18",
+  "next_fetch_date": "2026-10-23",
   "days": [
-    {
-      "date": "28.09.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Ratatouille mit Kräuterreis und Rucola, dazu ein Stück Obst (vegan)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "vegan",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "29.09.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Schupfnudelpfanne mit Gemüse, Pilze und Tofu, dazu ein Salat (vegan,1,GlWe,So,3,5,Sf)",
-          "text_en": "",
-          "price_studi": "2.90",
-          "allergens": "vegan,1,GlWe,So,3,5,Sf",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "30.09.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "vegane Currywurst auf Erbseneiweisbasis mit Ofenkartoffeln, dazu ein Stück Obst (vegan,1,3,8,12,21,Se,Sn)",
-          "text_en": "vegan sausage in curry sauce with baked potatoes (1,3,8,12,21,Se,Sn)",
-          "price_studi": "2.90",
-          "allergens": "vegan,1,3,8,12,21,Se,Sn",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "01.10.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
-          "text_en": "Homemade lentil Bolognese pasta and cheese, served with a side salad.",
-          "price_studi": "2.90",
-          "allergens": "GlWe,ML,Se,3,5,Sf",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "02.10.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
-          "text_en": "Chili sin carne with rice, served with a piece of fruit.",
-          "price_studi": "2.90",
-          "allergens": "vegan,So",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
     {
       "date": "05.10.2026",
       "weekday": "Montag",
@@ -226,6 +151,81 @@
         }
       ],
       "vegan_status": "vegan"
+    },
+    {
+      "date": "19.10.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Süßkartoffelcurry mit Kichererbsen, Ananas und Quinoa (vegan,3)",
+          "text_en": "Sweet potato curry with chickpeas, pineapple, quinoa and rice, plus a piece of fruit (vegan,3)",
+          "price_studi": "2.90",
+          "allergens": "vegan,3",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "20.10.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "veganer Hotdog auf Erbsenproteinbasis mit Ofenkartoffeln (vegan,3,5,Sf,GlWe,Se,Sn)",
+          "text_en": "Vegan hot dog (pea based protein) with baked potatoes, plus a salad (vegan,3,5,Sf,GlWe,Se,Sn)",
+          "price_studi": "2.90",
+          "allergens": "vegan,3,5,Sf,GlWe,Se,Sn",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "21.10.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Stück Obst (GlWe,ML,Se)",
+          "text_en": "Pasta with lentil bolognese + hard cheese, plus a piece of fruit (GlWe,ML,Se)",
+          "price_studi": "2.90",
+          "allergens": "GlWe,ML,Se",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "22.10.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Semmelknödel mit Pilzrahmsoße und Kräutern, dazu ein Salat (Ei,GlWe,ML,Sf,1,3,5)",
+          "text_en": "Bread dumplings with mushrooms in cream, plus a salad (Ei,GlWe,ML,Sf,1,3,5)",
+          "price_studi": "2.90",
+          "allergens": "Ei,GlWe,ML,Sf,1,3,5",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "23.10.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Schupfnudel-Sauerkrautpfanne mit Kräuterdip, dazu ein Stück Obst (3,5,26,GlWe,Ei,ML,Se,Sf)",
+          "text_en": "Schupfnudel-sauerkraut pan with herb sour cream, plus a piece of fruit (3,5,26,GlWe,Ei,ML,Se,Sf)",
+          "price_studi": "2.90",
+          "allergens": "3,5,26,GlWe,Ei,ML,Se,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
     }
   ]
 }
