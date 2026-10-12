@@ -1,82 +1,7 @@
 {
-  "last_updated": "2026-10-11T13:18:01",
-  "next_fetch_date": "2026-10-23",
+  "last_updated": "2026-10-12T15:55:27",
+  "next_fetch_date": "2026-10-30",
   "days": [
-    {
-      "date": "05.10.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Kichererbsencurry mit Spinat dazu Reis und ein Stück Obst (vegan)",
-          "text_en": "Chickpea curry with spinach and rice, plus a piece of fruit (vegan)",
-          "price_studi": "2.90",
-          "allergens": "vegan",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "06.10.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Kartoffelpfanne mit Bohnen und Gemüse dazu Kräuterdip und ein Salat (vegan,Sf,Sn,So,3,5)",
-          "text_en": "Potato pan with beans and vegetables and herb dip, plus a salad (vegan,3,5,Sf,So,Sn)",
-          "price_studi": "2.90",
-          "allergens": "vegan,Sf,Sn,So,3,5",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "07.10.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "überbackener Pastaauflauf mit Pilzen + karamelisierten Zwiebeln, dazu ein Stück Obst (1,3,GlWe,ML,Se)",
-          "text_en": "Pasta bake with mushrooms, caramelized onions, herbs and cheese, plus a piece of fruit (1,3,GlWe,ML,Se)",
-          "price_studi": "2.90",
-          "allergens": "1,3,GlWe,ML,Se",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "08.10.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat\n(Ei,GlWe,ML,Sf,3,5)",
-          "text_en": "cheese spaetzle with fried onions, plus a salad (3,5,Sf,GlWe,GlDi,Ei,ML)",
-          "price_studi": "2.90",
-          "allergens": "Ei,GlWe,ML,Sf,3,5",
-          "vegan_status": "not_vegan"
-        }
-      ],
-      "vegan_status": "not_vegan"
-    },
-    {
-      "date": "09.10.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Erbseneintopf mit Brötchen, dazu ein Stück Obst (vegan,3,GlWe,GlGe,Se)",
-          "text_en": "Pea stew with Kaiser rolls, plus a piece of fruit (vegan,3,GlWe,GlGe,Se)",
-          "price_studi": "2.90",
-          "allergens": "vegan,3,GlWe,GlGe,Se",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
     {
       "date": "12.10.2026",
       "weekday": "Montag",
@@ -222,6 +147,81 @@
           "text_en": "Schupfnudel-sauerkraut pan with herb sour cream, plus a piece of fruit (3,5,26,GlWe,Ei,ML,Se,Sf)",
           "price_studi": "2.90",
           "allergens": "3,5,26,GlWe,Ei,ML,Se,Sf",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "26.10.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Chili sin Carne mit Ofenkartoffel und Dip, dazu ein Stück Obst (vegan,GlHa,So)",
+          "text_en": "Baked potato, chili sin carne and vegan dip, plus a piece of fruit (vegan,GlHa,So)",
+          "price_studi": "2.90",
+          "allergens": "vegan,GlHa,So",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "27.10.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Brew Bites nach Stroganoff-Art mit Reis, dazu ein Salat (vegan,GlGe,Se,Sf,Sn,3,5,8)",
+          "text_en": "Brew Bites shredded Stroganoff with rice, plus a salad (vegan,3,8,GlGe,Se,Sn)",
+          "price_studi": "2.90",
+          "allergens": "vegan,GlGe,Se,Sf,Sn,3,5,8",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "28.10.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "haugemachte Gnocchi-Wirsingpfanne mit Wurzelgemüse und Soja, dazu ein Stück Obst(vegan,GlWe,NuWa,Se,So,3,5)",
+          "text_en": "Gnocchi pan with mushrooms, savoy cabbage and soy, plus a salad (vegan,GlWe,NuWa,Se,So,3,5)",
+          "price_studi": "2.90",
+          "allergens": "vegan,GlWe,NuWa,Se,So,3,5",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "29.10.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Mac + Cheese, dazu ein Salat \n(GlWe,ML,Sf,So,1,3,5,9)",
+          "text_en": "Mac + Cheese with fried onions, plus a salad (GlWe,ML,Sf,So,1,3,5,9)",
+          "price_studi": "2.90",
+          "allergens": "GlWe,ML,Sf,So,1,3,5,9",
+          "vegan_status": "not_vegan"
+        }
+      ],
+      "vegan_status": "not_vegan"
+    },
+    {
+      "date": "30.10.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Ofenkürbis, karamelisierten Zwiebeln, Drillinge und Dip, dazu ein Stück Obst (ML)",
+          "text_en": "Baked pumpkin with caramelized onions, triple potatoes, shepherd's cheese and dip, plus a piece of f (ML)",
+          "price_studi": "2.90",
+          "allergens": "ML",
           "vegan_status": "not_vegan"
         }
       ],
