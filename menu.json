@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T14:28:48",
+  "last_updated": "2026-10-14T12:14:52",
   "next_fetch_date": "2026-10-30",
   "days": [
     {
@@ -53,14 +53,14 @@
       "closed": false,
       "dishes": [
         {
-          "text": "Gnocchiauflauf mit Rahmkürbis, dazu ein Salat \n(GlWe,ML,Sf,3,5)",
-          "text_en": "Homemade gnocchi in pumpkin cream, plus a salad (3,5,GlWe,ML)",
+          "text": "Gnocchi mit Rahmkürbis (3,5,GlWe,ML)\nWeißkrautsalat (3,5,Sf)",
+          "text_en": "Homemade gnocchi in pumpkin cream, plus a salad (3,5,GlWe,ML)\nwhite cabbage salad (3,5,Sf)",
           "price_studi": "2.90",
-          "allergens": "GlWe,ML,Sf,3,5",
-          "vegan_status": "not_vegan"
+          "allergens": "3,5,Sf",
+          "vegan_status": "unclear"
         }
       ],
-      "vegan_status": "not_vegan"
+      "vegan_status": "unclear"
     },
     {
       "date": "16.10.2026",
