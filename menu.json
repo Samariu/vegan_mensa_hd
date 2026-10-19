@@ -1,82 +1,7 @@
 {
-  "last_updated": "2026-10-18T11:34:33",
-  "next_fetch_date": "2026-10-30",
+  "last_updated": "2026-10-19T13:48:36",
+  "next_fetch_date": "2026-11-06",
   "days": [
-    {
-      "date": "12.10.2026",
-      "weekday": "Montag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Quinoabratling mit Rahmwirsing, Kartoffeln und veganer Soße, dazu ein Stück Obst(vegan,Se,Sn,So,3)",
-          "text_en": "Quinoa patty on creamed savoy cabbage with potatoes and vegan sauce, plus a piece of fruit (vegan,Se,Sn,So,3)",
-          "price_studi": "2.90",
-          "allergens": "vegan,Se,Sn,So,3",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "13.10.2026",
-      "weekday": "Dienstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Linsen + Spätzle dazu ein Salat(vegan,GlWe,Se,Sf,Sn,3,5)",
-          "text_en": "Lentils and Spätzle with a salad (vegan,3,5,GlWe,Se,Sn,Sf)",
-          "price_studi": "2.90",
-          "allergens": "vegan,GlWe,Se,Sf,Sn,3,5",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "14.10.2026",
-      "weekday": "Mittwoch",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Geschmälzte Maultaschen mit Kartoffelsalat, dazu ein Stück Obst (vegan,GlWe,Se,Sn,1,3)",
-          "text_en": "Melted Maultaschen with potato salad, plus a piece of fruit (vegan,GlWe,Se,Sn,1,3)",
-          "price_studi": "2.90",
-          "allergens": "vegan,GlWe,Se,Sn,1,3",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
-    {
-      "date": "15.10.2026",
-      "weekday": "Donnerstag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Gnocchi mit Rahmkürbis (3,5,GlWe,ML)\nWeißkrautsalat (3,5,Sf)",
-          "text_en": "Homemade gnocchi in pumpkin cream, plus a salad (3,5,GlWe,ML)\nwhite cabbage salad (3,5,Sf)",
-          "price_studi": "2.90",
-          "allergens": "3,5,Sf",
-          "vegan_status": "unclear"
-        }
-      ],
-      "vegan_status": "unclear"
-    },
-    {
-      "date": "16.10.2026",
-      "weekday": "Freitag",
-      "closed": false,
-      "dishes": [
-        {
-          "text": "Reispfanne mit Tofu und Gemüse, dazu ein Stück Obst (vegan,Er,Sa,So)",
-          "text_en": "Rice pan with tofu and vegetables, plus a piece of fruit (vegan,Er,So,Sa)",
-          "price_studi": "2.90",
-          "allergens": "vegan,Er,Sa,So",
-          "vegan_status": "vegan"
-        }
-      ],
-      "vegan_status": "vegan"
-    },
     {
       "date": "19.10.2026",
       "weekday": "Montag",
@@ -226,6 +151,81 @@
         }
       ],
       "vegan_status": "not_vegan"
+    },
+    {
+      "date": "02.11.2026",
+      "weekday": "Montag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Blumenkohl Tikka Masala mit Reis, dazu ein Stück Obst (vegan,So)",
+          "text_en": "Cauliflower Tikka Masala with rice, plus a piece of fruit (vegan,So)",
+          "price_studi": "2.90",
+          "allergens": "vegan,So",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "03.11.2026",
+      "weekday": "Dienstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "veganes Schnitzel mit Spätzle und Rahmsoße, dazu ein Salat (vegan,1,3,5,sf,GlWe,So)",
+          "text_en": "Vegan schnitzel with Spätzle and cream sauce, plus a salad (vegan,1,3,5,sf,GlWe,So)",
+          "price_studi": "2.90",
+          "allergens": "vegan,1,3,5,sf,GlWe,So",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "04.11.2026",
+      "weekday": "Mittwoch",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Champignon-Kartoffelpfanne mit Soja, dazu ein Stück Obst (vegan,Se,So,3)",
+          "text_en": "Mushroom-potato pan with soy, plus a piece of fruit (vegan,Se,So,3)",
+          "price_studi": "2.90",
+          "allergens": "vegan,Se,So,3",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "05.11.2026",
+      "weekday": "Donnerstag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "hausgemachte Pasta mit Kichererbsen und Wurzelgemüse, dazu ein Salat (vegan,GlWe,Se,Sf,3,5)",
+          "text_en": "Homemade pasta with chickpeas and root vegetables, plus a salad (vegan,GlWe,Se,Sf,3,5)",
+          "price_studi": "2.90",
+          "allergens": "vegan,GlWe,Se,Sf,3,5",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
+    },
+    {
+      "date": "06.11.2026",
+      "weekday": "Freitag",
+      "closed": false,
+      "dishes": [
+        {
+          "text": "Herbstlicher Gemüseeintopf mit Kartoffeln, dazu ein Stück Obst (vegan,Se,Sf,3,5)",
+          "text_en": "Autumnal vegetable stew with potatoes, plus a piece of fruit (vegan,Se,Sf,3,5)",
+          "price_studi": "2.90",
+          "allergens": "vegan,Se,Sf,3,5",
+          "vegan_status": "vegan"
+        }
+      ],
+      "vegan_status": "vegan"
     }
   ]
 }
