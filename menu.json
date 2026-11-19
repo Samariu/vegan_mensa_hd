@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T15:54:16",
+  "last_updated": "2026-11-19T15:58:38",
   "next_fetch_date": "2026-12-04",
   "days": [
     {
@@ -53,10 +53,10 @@
       "closed": false,
       "dishes": [
         {
-          "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat\n(Ei,GlWe,ML,Sf,3,5)",
+          "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat\n(Ei,GlDi,GlWe,ML,Sf,3,5)",
           "text_en": "cheese spaetzle with fried onions, plus a salad (3,5,Sf,GlWe,GlDi,Ei,ML)",
           "price_studi": "2.90",
-          "allergens": "Ei,GlWe,ML,Sf,3,5",
+          "allergens": "Ei,GlDi,GlWe,ML,Sf,3,5",
           "vegan_status": "not_vegan"
         }
       ],
