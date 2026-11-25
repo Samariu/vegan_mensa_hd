@@ -6,8 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A GitHub Pages site that answers "is the vegan option available today at Mensa NF 304, Ausgabe D (Heidelberg)?". It has two components:
 
-1. **`scraper.py`** — fetches the mensa page (which embeds a `window.mensaData` JSON blob), classifies each dish as `vegan` / `not_vegan` / `unclear` using allergen codes, and writes `menu.json`.
-2. **`index.html`** — a self-contained static page that fetches `menu.json` at runtime, groups days by ISO week, and renders a colour-coded card view. No build step.
+1. **`scraper.py`** — fetches the mensa page (which embeds a `window.mensaData` JSON blob), classifies each dish as `vegan` / `not_vegan` / `unclear` using allergen codes, writes `menu.json`, and merges the scraped days into the long-term archive `history.json`.
+2. **`index.html`** — a self-contained static page with two tabs: *Speiseplan* (fetches `menu.json`, hero card for today + week cards) and *Statistik* (`#statistik`, lazily fetches `history.json`: overall vegan share, week-by-week grid, share per weekday). No build step.
+
+## history.json
+
+Archive of every Ausgabe-D day ever scraped (slim: date, weekday, closed, status, dish text, reasons). Each run overwrites the dates it scraped (so "closed" placeholders get fixed) and leaves older dates frozen. It was backfilled once from the git history of `menu.json` (back to 27.04.2026), re-classifying every snapshot with the current classifier. If the classifier changes again, the archive keeps the old verdicts unless it is backfilled again the same way.
 
 ## Running the scraper locally
 
@@ -34,7 +38,7 @@ The day-level `vegan_status` is `vegan` if any dish is vegan, `not_vegan` if any
 
 ## Automation
 
-`.github/workflows/update-menu.yml` runs **daily** at 06:30 UTC and unconditionally re-scrapes, committing `menu.json` only when it actually changed.
+`.github/workflows/update-menu.yml` runs **daily** at 06:30 UTC and unconditionally re-scrapes, committing `menu.json` and `history.json` only when they actually changed.
 
 Daily rather than weekly on purpose: the Studierendenwerk sometimes publishes a menu week late and serves `geschlossen: true` placeholders for every day in the meantime. Under the old weekly schedule one unlucky Monday snapshot froze "closed" onto the site for a full week. A daily re-run self-heals within 24h.
 

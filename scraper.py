@@ -18,6 +18,7 @@ import requests
 MENSA_URL = os.environ.get("MENSA_URL", "")
 MENSA_NAME = "Mensa Im Neuenheimer Feld 304"
 OUTPUT_FILE = "menu.json"
+HISTORY_FILE = "history.json"
 
 # Official legend from the Studierendenwerk menu page (allergens, additives,
 # meat labels). Used to explain codes in the UI.
@@ -189,6 +190,40 @@ def process_data(raw: dict) -> dict:
     }
 
 
+def history_entry(day: dict) -> dict:
+    """Slim copy of a day for the long-term archive (no code chips)."""
+    return {
+        "date": day["date"],
+        "weekday": day["weekday"],
+        "closed": day["closed"],
+        "vegan_status": day["vegan_status"],
+        "dishes": [
+            {"text": d["text"], "vegan_status": d["vegan_status"],
+             "reasons": d.get("reasons", [])}
+            for d in day["dishes"]
+        ],
+    }
+
+
+def update_history(days: list, path: str = HISTORY_FILE) -> int:
+    """
+    Merge the scraped days into the archive. Newer scrapes overwrite a date
+    (fixes "closed" placeholders once the real menu is out); dates that drop
+    out of the scrape stay frozen as last seen.
+    """
+    try:
+        with open(path, encoding="utf-8") as f:
+            archive = {d["date"]: d for d in json.load(f)["days"]}
+    except FileNotFoundError:
+        archive = {}
+    for day in days:
+        archive[day["date"]] = history_entry(day)
+    ordered = sorted(archive.values(), key=lambda d: parse_date(d["date"]))
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"days": ordered}, f, ensure_ascii=False, indent=1)
+    return len(ordered)
+
+
 def main():
     if not MENSA_URL:
         print(
@@ -203,6 +238,9 @@ def main():
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
+
+    n_hist = update_history(result["days"])
+    print(f"History: {n_hist} days → {HISTORY_FILE}", file=sys.stderr)
 
     closed = sum(1 for d in result["days"] if d["closed"])
     open_ = len(result["days"]) - closed
