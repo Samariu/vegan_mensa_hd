@@ -56,3 +56,8 @@ stw.uni-heidelberg.de page (window.mensaData)
 ```
 
 `menu.json` is committed directly to the repo and served via GitHub Pages alongside `index.html`.
+
+## Privacy, fonts and analytics
+
+- Fonts (Inter, Fraunces; SIL OFL) are self-hosted in `fonts/`. Do not reintroduce Google Fonts or other third-party CDNs: embedding them sends every visitor's IP to the third party.
+- Page views are counted with GoatCounter (cookieless). It is configured by the `GC_CODE` constant near the top of the `<script>` in `index.html`; an empty string disables tracking entirely and hides the GoatCounter paragraph in the footer's privacy note. Opening the Statistik tab is sent as the event `tab-statistik`.
