@@ -6,10 +6,17 @@
   <meta name="theme-color" content="#0f3d2e" />
   <title>Vegan in der Mensa?</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="fonts/fraunces-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <style>
+    /* Fonts are self-hosted (SIL OFL, see fonts/LICENSE-*.txt) so no visitor
+       data goes to Google. */
+    @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url(fonts/inter-latin-400-normal.woff2) format("woff2"); }
+    @font-face { font-family: "Inter"; font-weight: 500; font-display: swap; src: url(fonts/inter-latin-500-normal.woff2) format("woff2"); }
+    @font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url(fonts/inter-latin-600-normal.woff2) format("woff2"); }
+    @font-face { font-family: "Fraunces"; font-weight: 600; font-display: swap; src: url(fonts/fraunces-latin-600-normal.woff2) format("woff2"); }
+    @font-face { font-family: "Fraunces"; font-weight: 800; font-display: swap; src: url(fonts/fraunces-latin-800-normal.woff2) format("woff2"); }
+
     :root {
       --bg: #f5f3ee;
       --surface: #ffffff;
@@ -180,6 +187,10 @@
 
     footer { text-align: center; font-size: .75rem; color: var(--muted); padding: 8px 16px 40px; line-height: 1.6; }
     footer a { color: inherit; }
+    .privacy { max-width: 520px; margin: 12px auto 0; text-align: left; }
+    .privacy summary { cursor: pointer; text-align: center; text-decoration: underline; text-underline-offset: 2px; }
+    .privacy div { margin-top: 8px; padding: 12px 14px; border-radius: 12px; background: var(--surface); }
+    .privacy p + p { margin-top: 6px; }
 
     /* ── tabs ── */
     .tabs {
@@ -287,9 +298,38 @@
     <div id="tooltip" class="tooltip" hidden></div>
   </main>
 
-  <footer id="footer"></footer>
+  <footer>
+    <div id="footer"></div>
+    <details class="privacy">
+      <summary>Datenschutz</summary>
+      <div>
+        <p>Diese Seite setzt keine Cookies und speichert nichts auf deinem Gerät. Schriften und Daten werden direkt von dieser Seite geladen, nicht von Dritten.</p>
+        <p id="privacy-gc">Zur anonymen Reichweitenmessung wird <a href="https://www.goatcounter.com/help/gdpr" rel="noopener">GoatCounter</a> genutzt. Gezählt werden Seitenaufrufe mit Adresse, Referrer, Browser-Typ, Bildschirmgröße und grob abgeleitetem Land. IP-Adressen werden dabei nicht gespeichert, Besucher werden nicht seitenübergreifend verfolgt.</p>
+        <p>Speiseplan-Daten: Studierendenwerk Heidelberg. Angaben ohne Gewähr.</p>
+      </div>
+    </details>
+  </footer>
 
   <script>
+    /* ── GoatCounter (cookieless page-view counting) ──
+       Set GC_CODE to the code of your GoatCounter site (the "xyz" in
+       xyz.goatcounter.com). Empty = no tracking at all. */
+    const GC_CODE = "";
+    if (GC_CODE) {
+      const sc = document.createElement("script");
+      sc.async = true;
+      sc.src = "https://gc.zgo.at/count.js";
+      sc.dataset.goatcounter = `https://${GC_CODE}.goatcounter.com/count`;
+      document.head.appendChild(sc);
+    } else {
+      document.addEventListener("DOMContentLoaded", () => document.getElementById("privacy-gc")?.remove());
+    }
+    function trackEvent(path, title) {
+      if (!GC_CODE) return;
+      const send = () => window.goatcounter?.count?.({ path, title, event: true });
+      if (window.goatcounter?.count) send(); else window.addEventListener("load", send, { once: true });
+    }
+
     const WD_SHORT = { Montag: "Mo", Dienstag: "Di", Mittwoch: "Mi", Donnerstag: "Do", Freitag: "Fr" };
     const STATUS_TEXT = { vegan: "vegan", not_vegan: "nicht vegan", unclear: "unklar", closed: "geschlossen" };
     const HERO_TEXT   = { vegan: "Ja, vegan!", not_vegan: "Leider nicht", unclear: "Unklar", closed: "Geschlossen" };
@@ -600,6 +640,7 @@
         b.setAttribute("aria-selected", String(b.dataset.view === view)));
       document.getElementById("view-plan").hidden = view !== "plan";
       document.getElementById("view-stats").hidden = view !== "stats";
+      if (view === "stats") trackEvent("tab-statistik", "Statistik-Tab geöffnet");
       if (view === "stats" && !statsLoaded) {
         statsLoaded = true;
         fetch("history.json", { cache: "no-cache" })
