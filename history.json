@@ -1,0 +1,2251 @@
+{
+ "days": [
+  {
+   "date": "27.04.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (GlWe,Sn)",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "28.04.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganes Schnitzel auf Weizenproteinbasis mit Spätzle und Rahmsoße, dazu ein Salat (1,GlWe,So, 3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "29.04.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "30.04.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Kichererbsen-Couscous-Pfanne mit Gemüse und Hirtenkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "01.05.2026",
+   "weekday": "Freitag",
+   "closed": true,
+   "vegan_status": "closed",
+   "dishes": []
+  },
+  {
+   "date": "04.05.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (3,Se,Sn)",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "05.05.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "Brew Bites Geschnetzteltes nach Züricher Art auf Gernen- und Erbsenproteinbasis mit Späzle, dazu ein Salat(5,26,GlWe,GlGe,So,Sf,3,5,Sf)",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "06.05.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "07.05.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Tofu nach Carbonara Art (GlWe,GlHa,So,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "08.05.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "Mit Reis und Gemüse gefüllte Paprika dazu Tomatensoße, Rosmarinkartoffeln und ein Stück Obst (1)",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "11.05.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "afrikanischer Erdnusseintopf mit Kartoffeln, dazu ein Stück Obst\n(vegan,Er,Se,So,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "12.05.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "13.05.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(vegan,3,5,12,26,So,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "14.05.2026",
+   "weekday": "Donnerstag",
+   "closed": true,
+   "vegan_status": "closed",
+   "dishes": []
+  },
+  {
+   "date": "15.05.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Kartoffel-Lauch Tortilla mit Ajvardip, dazu ein Salat (Ei,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "18.05.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Blumenkohl Kartoffelcurry mit Reis, dazu ein Stück Obst (vegan,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "19.05.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Tortellini mit Tomaten-Basilikumrahm und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "20.05.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen + Spätzle, dazu ein Stück Obst (vegan,3,5,GlWe,Se,Sn,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "21.05.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "überbackener Gemüse-Gnocchiauflauf, dazu ein Salat (GlWe,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "22.05.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kichererbseneintopf mit Gemüse, dazu ein Stück Obst (vegan,3,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "25.05.2026",
+   "weekday": "Montag",
+   "closed": true,
+   "vegan_status": "closed",
+   "dishes": []
+  },
+  {
+   "date": "26.05.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "vegane Currywurst auf Erbseneiweisbasis mit Ofenkartoffeln, dazu ein Stück Obst (vegan,1,3,8,12,21,Se,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "27.05.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Schupfnudelpfanne mit Gemüse, Pilze und Tofu, dazu ein Salat (vegan,1,GlWe,So,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "28.05.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "29.05.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "01.06.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Auberginen Kichererbsencurry mit Mandelreis, dazu ein Stück Obst (vegan,NuMa)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "02.06.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Gemüsefrikadelle, Paprikasoße und Salzkartoffeln, dazu ein Salat (vegan,1,GlWe,Se,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "03.06.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Ofengemüse mit Rosmarinkartoffeln und einem veganen Kräuterdip, dazu ein Stück Obst(vegan,So,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "04.06.2026",
+   "weekday": "Donnerstag",
+   "closed": true,
+   "vegan_status": "closed",
+   "dishes": []
+  },
+  {
+   "date": "05.06.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Gnocchi mit Tomatenpestosoße, Oliven und Kräuterpesto, dazu ein Stück Obst (vegan,3,5,6,GlWe,So,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "08.06.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (vegan,GlWe,Se,Sn,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "09.06.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganes Schnitzel auf Weizenproteinbasis mit Spätzle und Rahmsoße, dazu ein Salat (vegan,1,GlWe,So, 3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "10.06.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "11.06.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Kichererbsen-Couscous-Pfanne mit Gemüse und Hirtenkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "12.06.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganer Gaisburger Marsch mit Baguette, dazu ein Stück Obst (vegan,3,GlWe,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "15.06.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (vegan,3,Se,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "16.06.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Brew Bites Geschnetzteltes nach Züricher Art auf Gernen- und Erbsenproteinbasis mit Späzle, dazu ein Salat(vegan,5,26,GlWe,GlGe,So,Sf,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "17.06.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (3,Se,ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "18.06.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Tofu nach Carbonara Art (vegan,GlWe,GlHa,So,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "19.06.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "Mit Reis und Gemüse gefüllte Paprika dazu Tomatensoße, Rosmarinkartoffeln und ein Stück Obst (1)",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "22.06.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "afrikanischer Erdnusseintopf mit Kartoffeln, dazu ein Stück Obst\n(vegan,Er,Se,So,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "23.06.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "24.06.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(3,5,12,26,So,Sf)",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "25.06.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat(GlWe,GlDi,Ei,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "26.06.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Kartoffel-Lauch Tortilla mit Ajvardip, dazu ein Salat (Ei,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "29.06.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Blumenkohl Kartoffelcurry mit Reis, dazu ein Stück Obst (vegan,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "30.06.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Tortellini mit Tomaten-Basilikumrahm und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "01.07.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen + Spätzle, dazu ein Stück Obst (vegan,3,5,GlWe,Se,Sn,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "02.07.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "überbackener Gemüse-Gnocchiauflauf, dazu ein Salat (GlWe,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "03.07.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kichererbseneintopf mit Gemüse, dazu ein Stück Obst (vegan,3,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "06.07.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Ratatouille mit Kräuterreis und Rucola, dazu ein Stück Obst (vegan)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "07.07.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Schupfnudelpfanne mit Gemüse, Pilze und Tofu, dazu ein Salat (vegan,1,GlWe,So,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "08.07.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "vegane Currywurst auf Erbseneiweisbasis mit Ofenkartoffeln, dazu ein Stück Obst (vegan,1,3,8,12,21,Se,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "09.07.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "10.07.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "13.07.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Auberginen Kichererbsencurry mit Mandelreis, dazu ein Stück Obst (vegan,NuMa)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "14.07.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Gemüsefrikadelle, Paprikasoße und Salzkartoffeln, dazu ein Salat (vegan,1,GlWe,Se,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "15.07.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Ofengemüse mit Rosmarinkartoffeln und einem veganen Kräuterdip, dazu ein Stück Obst(vegan,So,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "16.07.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Mac + Cheese dazu ein Salat (1,GlWe,So,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "17.07.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Gnocchi mit Tomatenpestosoße, Oliven und Kräuterpesto, dazu ein Stück Obst (vegan,3,5,6,GlWe,So,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "20.07.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (vegan,GlWe,Se,Sn,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "21.07.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganes Schnitzel auf Weizenproteinbasis mit Spätzle und Rahmsoße, dazu ein Salat (vegan,1,GlWe,So, 3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "22.07.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "23.07.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Kichererbsen-Couscous-Pfanne mit Gemüse und Hirtenkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "24.07.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganer Gaisburger Marsch mit Baguette, dazu ein Stück Obst (vegan,3,GlWe,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "27.07.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (vegan,3,Se,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "28.07.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Brew Bites Geschnetzteltes nach Züricher Art auf Gernen- und Erbsenproteinbasis mit Späzle, dazu ein Salat(vegan,5,26,GlWe,GlGe,So,Sf,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "29.07.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (3,Se,ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "30.07.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Tofu nach Carbonara Art (vegan,GlWe,GlHa,So,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "31.07.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "Mit Reis und Gemüse gefüllte Paprika dazu Tomatensoße, Rosmarinkartoffeln und ein Stück Obst (1)",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "03.08.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "afrikanischer Erdnusseintopf mit Kartoffeln, dazu ein Stück Obst\n(vegan,Er,Se,So,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "04.08.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "05.08.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(vegan,3,5,12,26,So,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "06.08.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat(GlWe,GlDi,Ei,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "07.08.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Kartoffel-Lauch Tortilla mit Ajvardip, dazu ein Salat (Ei,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "10.08.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Blumenkohl Kartoffelcurry mit Reis, dazu ein Stück Obst (vegan,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "11.08.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Tortellini mit Tomaten-Basilikumrahm und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "12.08.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen + Spätzle, dazu ein Stück Obst (vegan,3,5,GlWe,Se,Sn,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "13.08.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "überbackener Gemüse-Gnocchiauflauf, dazu ein Salat (GlWe,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "14.08.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kichererbseneintopf mit Gemüse, dazu ein Stück Obst (vegan,3,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "17.08.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Ratatouille mit Kräuterreis und Rucola, dazu ein Stück Obst (vegan)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "18.08.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Schupfnudelpfanne mit Gemüse, Pilze und Tofu, dazu ein Salat (vegan,1,GlWe,So,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "19.08.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "vegane Currywurst auf Erbseneiweisbasis mit Ofenkartoffeln, dazu ein Stück Obst (vegan,1,3,8,12,21,Se,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "20.08.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "21.08.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "24.08.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Auberginen Kichererbsencurry mit Mandelreis, dazu ein Stück Obst (vegan,NuMa)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "25.08.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Gemüsefrikadelle, Paprikasoße und Salzkartoffeln, dazu ein Salat (vegan,1,GlWe,Se,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "26.08.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Ofengemüse mit Rosmarinkartoffeln und einem veganen Kräuterdip, dazu ein Stück Obst(vegan,So,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "27.08.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Mac + Cheese dazu ein Salat (1,GlWe,So,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "28.08.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Gnocchi mit Tomatenpestosoße, Oliven und Kräuterpesto, dazu ein Stück Obst (vegan,3,5,6,GlWe,So,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "31.08.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Geschmälzte Maultaschen mit Kartoffelsalat und ein Stück Obst (vegan,GlWe,Se,Sn,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "01.09.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganes Schnitzel mit Spätzle und Pilzrahmsoße, dazu ein Salat (vegan,1,GlWe, GlHa, So, 3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "02.09.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Pastaauflauf mit Gemüse und Frischkäsesoße, dazu ein Stück Obst (1,GlWe,ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "03.09.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Kichererbsen-Couscous-Pfanne mit Gemüse und Hirtenkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "04.09.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganer Gaisburger Marsch mit Baguette, dazu ein Stück Obst (vegan,3,GlWe,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "07.09.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen-Gemüsecurry mit Reis, dazu ein Stück Obst (vegan,3,Se,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "08.09.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Brew Bites Geschnetzteltes nach Züricher Art auf Gernen- und Erbsenproteinbasis mit Späzle, dazu ein Salat(vegan,5,26,GlWe,GlGe,So,Sf,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "09.09.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Buchweizenbratling mit Tomaten-Paprikareis und Gurken-Joghurt Dip, dazu ein Stück Obst (3,Se,ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "10.09.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Tofu nach Carbonara Art (vegan,GlWe,GlHa,So,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "11.09.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "Mit Reis und Gemüse gefüllte Paprika dazu Tomatensoße, Rosmarinkartoffeln und ein Stück Obst (1)",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "14.09.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "afrikanischer Erdnusseintopf mit Kartoffeln, dazu ein Stück Obst\n(vegan,Er,Se,So,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "15.09.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Semmelknödel mit Pilzrahmsauce und Kräutern, dazu ein Salat\n(Ei,GlWe,ML,Sf,1,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "16.09.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Sojageschnetzeltes süß sauer mit Gemüse und Reis dazu ein Stück Obst(vegan,3,5,12,26,So,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "17.09.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat(GlWe,GlDi,Ei,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "18.09.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Kartoffel-Lauch Tortilla mit Ajvardip, dazu ein Salat (Ei,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "21.09.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Blumenkohl Kartoffelcurry mit Reis, dazu ein Stück Obst (vegan,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "22.09.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Tortellini mit Tomaten-Basilikumrahm und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "23.09.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen + Spätzle, dazu ein Stück Obst (vegan,3,5,GlWe,Se,Sn,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "24.09.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "überbackener Gemüse-Gnocchiauflauf, dazu ein Salat (GlWe,ML,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "25.09.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kichererbseneintopf mit Gemüse, dazu ein Stück Obst (vegan,3,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "28.09.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Ratatouille mit Kräuterreis und Rucola, dazu ein Stück Obst (vegan)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "29.09.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Schupfnudelpfanne mit Gemüse, Pilze und Tofu, dazu ein Salat (vegan,1,GlWe,So,3,5,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "30.09.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "vegane Currywurst auf Erbseneiweisbasis mit Ofenkartoffeln, dazu ein Stück Obst (vegan,1,3,8,12,21,Se,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "01.10.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Salat (GlWe,ML,Se,3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "02.10.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Chili sin Carne mit Reis, dazu ein Stück Obst (vegan,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "05.10.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kichererbsencurry mit Spinat dazu Reis und ein Stück Obst (vegan)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "06.10.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kartoffelpfanne mit Bohnen und Gemüse dazu Kräuterdip und ein Salat (vegan,Sf,Sn,So,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "07.10.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "überbackener Pastaauflauf mit Pilzen + karamelisierten Zwiebeln, dazu ein Stück Obst (1,3,GlWe,ML,Se)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "08.10.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat\n(Ei,GlWe,ML,Sf,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "09.10.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Erbseneintopf mit Brötchen, dazu ein Stück Obst (vegan,3,GlWe,GlGe,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "12.10.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Quinoabratling mit Rahmwirsing, Kartoffeln und veganer Soße, dazu ein Stück Obst(vegan,Se,Sn,So,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "13.10.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen + Spätzle dazu ein Salat(vegan,GlWe,Se,Sf,Sn,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "14.10.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Geschmälzte Maultaschen mit Kartoffelsalat, dazu ein Stück Obst (vegan,GlWe,Se,Sn,1,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "15.10.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Gnocchi mit Rahmkürbis (3,5,GlWe,ML)\nWeißkrautsalat (3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "16.10.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Reispfanne mit Tofu und Gemüse, dazu ein Stück Obst (vegan,Er,Sa,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "19.10.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Süßkartoffelcurry mit Kichererbsen, Ananas und Quinoa (vegan,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "20.10.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganer Hotdog auf Erbsenproteinbasis mit Ofenkartoffeln (vegan,3,5,Sf,GlWe,Se,Sn)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "21.10.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Stück Obst (GlWe,ML,Se)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "22.10.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Semmelknödel mit Pilzrahmsoße und Kräutern, dazu ein Salat (Ei,GlWe,ML,Sf,1,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "23.10.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Schupfnudel-Sauerkrautpfanne mit Kräuterdip, dazu ein Stück Obst (3,5,26,GlWe,Ei,ML,Se,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "26.10.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Chili sin Carne mit Ofenkartoffel und Dip, dazu ein Stück Obst (vegan,GlHa,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "27.10.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Brew Bites nach Stroganoff-Art mit Reis, dazu ein Salat (vegan,GlGe,Se,Sf,Sn,3,5,8)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "28.10.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "haugemachte Gnocchi-Wirsingpfanne mit Wurzelgemüse und Soja, dazu ein Stück Obst(vegan,GlWe,NuWa,Se,So,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "29.10.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Mac + Cheese, dazu ein Salat \n(GlWe,ML,Sf,So,1,3,5,9)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "30.10.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Ofenkürbis, karamelisierten Zwiebeln, Drillinge und Dip, dazu ein Stück Obst (ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "02.11.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Blumenkohl Tikka Masala mit Reis, dazu ein Stück Obst (vegan,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "03.11.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "veganes Schnitzel mit Spätzle und Rahmsoße, dazu ein Salat (vegan,1,3,5,sf,GlWe,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "04.11.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Champignon-Kartoffelpfanne mit Soja, dazu ein Stück Obst (vegan,Se,So,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "05.11.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Kichererbsen und Wurzelgemüse, dazu ein Salat (vegan,GlWe,Se,Sf,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "06.11.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Herbstlicher Gemüseeintopf mit Kartoffeln, dazu ein Stück Obst (vegan,Se,Sf,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "09.11.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kürbis- Kartoffelgulasch mit Falafel und Dip, dazu ein Stück Obst (vegan,GlHa,GlWe,Se,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "10.11.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "herbstliche Eierknöpflepfanne mit Pilzen und Gemüse, dazu ein Stück Obst (Ei,GlDi,GlWe,ML,Se,Sf,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "11.11.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "vegane Bratwurst auf Erbseneiweisbasis, mit Sauerkraut, Kartoffelpüree und Soße, dazu ein Stück Obst (vegan,Sf,Sn,So,1,26,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "12.11.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Gnocchiauflauf mit Sonnenblumenbolognese, dazu ein Salat (vegan,GlWe,Se,Sf,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "13.11.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "unclear",
+   "dishes": [
+    {
+     "text": "cremiger Linsen-Bulgureintopf mit Brötchen (3,GlWe,GlGe,Se)\nHandobst",
+     "vegan_status": "unclear",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "16.11.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kichererbsencurry mit Spinat dazu Reis und ein Stück Obst (vegan)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "17.11.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Kartoffelpfanne mit Bohnen und Gemüse dazu Kräuterdip und ein Salat (vegan,Sf,Sn,So,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "18.11.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "überbackener Pastaauflauf mit Pilzen + karamelisierten Zwiebeln, dazu ein Stück Obst (1,3,GlWe,ML,Se)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "19.11.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Käsespätzle mit Röstzwiebeln, dazu ein Salat\n(Ei,GlDi,GlWe,ML,Sf,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "20.11.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Erbseneintopf mit Brötchen, dazu ein Stück Obst (vegan,3,GlWe,GlGe,Se)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "23.11.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Quinoabratling mit Rahmwirsing, Kartoffeln und veganer Soße, dazu ein Stück Obst(vegan,Se,Sn,So,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "24.11.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Linsen + Spätzle dazu ein Salat(vegan,GlWe,Se,Sf,Sn,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "25.11.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Geschmälzte Maultaschen mit Kartoffelsalat, dazu ein Stück Obst (vegan,GlWe,Se,Sn,1,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "26.11.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Gnocchi mit Rahmkürbis (3,5,GlWe,ML)\nWeißkrautsalat (3,5,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "27.11.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Reispfanne mit Tofu und Gemüse, dazu ein Stück Obst (vegan,Er,Sa,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "30.11.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Süßkartoffelcurry mit Kichererbsen, Ananas und Quinoa (vegan,3)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "01.12.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "vegane Currywurst mit Ofenkartoffeln, dazu ein Salat (1,3,5,8,21,Se,Sn,Sf)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "02.12.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "hausgemachte Pasta mit Linsenbolognese und Hartkäse, dazu ein Stück Obst (GlWe,ML,Se)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "03.12.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Semmelknödel mit Pilzrahmsoße und Kräutern, dazu ein Salat (Ei,GlWe,ML,Sf,1,3,5)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "04.12.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Schupfnudel-Sauerkrautpfanne mit Kräuterdip, dazu ein Stück Obst (3,5,26,GlWe,Ei,ML,Se,Sf)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Ei",
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "07.12.2026",
+   "weekday": "Montag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Chili sin Carne mit Ofenkartoffel und Dip, dazu ein Stück Obst (vegan,GlHa,So)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "08.12.2026",
+   "weekday": "Dienstag",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "Brew Bites nach Stroganoff-Art mit Reis, dazu ein Salat (vegan,GlGe,Se,Sf,Sn,3,5,8)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "09.12.2026",
+   "weekday": "Mittwoch",
+   "closed": false,
+   "vegan_status": "vegan",
+   "dishes": [
+    {
+     "text": "haugemachte Gnocchi-Wirsingpfanne mit Wurzelgemüse und Soja, dazu ein Stück Obst(vegan,GlWe,NuWa,Se,So,3,5)",
+     "vegan_status": "vegan",
+     "reasons": []
+    }
+   ]
+  },
+  {
+   "date": "10.12.2026",
+   "weekday": "Donnerstag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Mac + Cheese, dazu ein Salat \n(GlWe,ML,Sf,So,1,3,5,9)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "11.12.2026",
+   "weekday": "Freitag",
+   "closed": false,
+   "vegan_status": "not_vegan",
+   "dishes": [
+    {
+     "text": "Ofenkürbis, karamelisierten Zwiebeln, Drillinge und Dip, dazu ein Stück Obst (ML)",
+     "vegan_status": "not_vegan",
+     "reasons": [
+      "Milch"
+     ]
+    }
+   ]
+  }
+ ]
+}

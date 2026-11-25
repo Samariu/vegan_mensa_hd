@@ -19,9 +19,9 @@
       --brand: #0f3d2e;
       --brand-ink: #e9f5ee;
 
-      --vegan: #1f8a4c;      --vegan-bg: #e4f4e9;
-      --not: #c2412d;        --not-bg: #fbe7e2;
-      --unclear: #b07a0a;    --unclear-bg: #fbf1d6;
+      --vegan: #1a7f64;      --vegan-bg: #e0f2ec;
+      --not: #d9532b;        --not-bg: #fbe6de;
+      --unclear: #b8860b;    --unclear-bg: #fbf1d6;
       --closed: #8b908c;     --closed-bg: #ecebe7;
 
       --radius: 18px;
@@ -36,9 +36,9 @@
         --line: rgba(255,255,255,.08);
         --brand: #0b2c21;
         --brand-ink: #d6efe0;
-        --vegan: #4cc47e;      --vegan-bg: rgba(76,196,126,.13);
-        --not: #f07a64;        --not-bg: rgba(240,122,100,.13);
-        --unclear: #e6b54a;    --unclear-bg: rgba(230,181,74,.13);
+        --vegan: #2a9d80;      --vegan-bg: rgba(42,157,128,.16);
+        --not: #e8663c;        --not-bg: rgba(232,102,60,.15);
+        --unclear: #cfa634;    --unclear-bg: rgba(207,166,52,.15);
         --closed: #8b908c;     --closed-bg: rgba(255,255,255,.05);
         --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
       }
@@ -94,7 +94,7 @@
     .hero-answer .big {
       font-family: "Fraunces", Georgia, serif;
       font-size: clamp(2rem, 9vw, 2.8rem); font-weight: 800; line-height: 1;
-      color: var(--accent);
+      color: var(--accent); white-space: nowrap;
     }
     .hero-icon {
       width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
@@ -181,6 +181,61 @@
     footer { text-align: center; font-size: .75rem; color: var(--muted); padding: 8px 16px 40px; line-height: 1.6; }
     footer a { color: inherit; }
 
+    /* ── tabs ── */
+    .tabs {
+      display: inline-flex; gap: 4px; margin-top: 18px; padding: 4px;
+      background: rgba(255,255,255,.1); border-radius: 999px;
+    }
+    .tabs button {
+      font: inherit; font-size: .85rem; font-weight: 600;
+      border: 0; border-radius: 999px; padding: 7px 16px; cursor: pointer;
+      background: transparent; color: var(--brand-ink); opacity: .75;
+    }
+    .tabs button[aria-selected="true"] { background: var(--brand-ink); color: var(--brand); opacity: 1; }
+    [hidden] { display: none !important; }
+
+    /* ── stats ── */
+    .stats-hero { --accent: var(--vegan); --accent-bg: var(--vegan-bg); }
+    .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+    .stat { border-radius: 12px; padding: 10px 12px; background: var(--accent-bg); }
+    .stat .n { font-family: "Fraunces", Georgia, serif; font-size: 1.5rem; font-weight: 800; color: var(--ink); }
+    .stat .l { font-size: .75rem; color: var(--muted); display: flex; align-items: center; gap: 5px; }
+    .stat .l i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    .sharebar { display: flex; gap: 2px; height: 10px; margin-top: 16px; }
+    .sharebar span { background: var(--accent); }
+    .sharebar span:first-child { border-radius: 4px 0 0 4px; }
+    .sharebar span:last-child { border-radius: 0 4px 4px 0; }
+
+    .chart-card { padding: 14px 16px; }
+    .week-grid { display: grid; grid-template-columns: auto repeat(5, 1fr) auto; gap: 4px 4px; align-items: center; }
+    .week-grid .hd { font-size: .7rem; color: var(--muted); text-align: center; font-weight: 600; }
+    .week-grid .wk { font-size: .75rem; color: var(--muted); padding-right: 6px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .week-grid .sum { font-size: .75rem; color: var(--muted); padding-left: 6px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .cell {
+      height: 26px; border-radius: 6px; background: var(--accent);
+      display: grid; place-items: center; color: #fff; cursor: default;
+    }
+    .cell svg { width: 14px; height: 14px; }
+    .cell.s-closed { background: var(--closed-bg); color: var(--muted); }
+    .cell.empty { background: transparent; border: 1px dashed var(--line); }
+    .cell:hover { outline: 2px solid var(--ink); outline-offset: 1px; }
+
+    .wd-row { display: grid; grid-template-columns: 28px 1fr 44px; gap: 10px; align-items: center; padding: 6px 0; }
+    .wd-row .wd { font-size: .8rem; font-weight: 600; color: var(--muted); }
+    .wd-row .bar { display: flex; gap: 2px; height: 18px; }
+    .wd-row .bar span { background: var(--accent); }
+    .wd-row .bar span:first-child { border-radius: 4px 0 0 4px; }
+    .wd-row .bar span:last-child { border-radius: 0 4px 4px 0; }
+    .wd-row .pct { font-size: .8rem; text-align: right; font-variant-numeric: tabular-nums; }
+
+    .tooltip {
+      position: fixed; z-index: 10; max-width: 260px; pointer-events: none;
+      background: var(--ink); color: var(--bg); border-radius: 10px;
+      padding: 8px 10px; font-size: .78rem; line-height: 1.4;
+      box-shadow: var(--shadow);
+    }
+    .tooltip b { display: block; margin-bottom: 2px; }
+
     #error-msg {
       display: none; margin-top: 16px; padding: 14px 16px; border-radius: 12px;
       background: var(--not-bg); color: var(--not);
@@ -193,10 +248,14 @@
     <div class="wrap">
       <div class="eyebrow">Mensa Im Neuenheimer Feld 304 · Ausgabe D</div>
       <h1>Gibt's heute was Veganes?</h1>
+      <nav class="tabs" role="tablist">
+        <button role="tab" data-view="plan" aria-selected="true">Speiseplan</button>
+        <button role="tab" data-view="stats" aria-selected="false">Statistik</button>
+      </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="view-plan">
     <section class="hero skeleton" id="hero"></section>
     <div id="error-msg"></div>
     <div id="weeks"></div>
@@ -207,6 +266,25 @@
       <span class="s-unclear"><i></i>unklar</span>
       <span class="s-closed"><i></i>geschlossen</span>
     </div>
+  </main>
+
+  <main class="wrap" id="view-stats" hidden>
+    <section class="hero stats-hero" id="stats-hero"></section>
+    <section class="week">
+      <h2><span>Woche für Woche</span><span class="count" id="weeks-range"></span></h2>
+      <div class="card chart-card"><div id="week-grid" class="week-grid"></div></div>
+    </section>
+    <section class="week">
+      <h2><span>Nach Wochentag</span></h2>
+      <div class="card chart-card"><div id="weekday-bars"></div></div>
+    </section>
+    <div class="legend">
+      <span class="s-vegan"><i></i>vegan</span>
+      <span class="s-not_vegan"><i></i>nicht vegan</span>
+      <span class="s-unclear"><i></i>unklar</span>
+      <span class="s-closed"><i></i>geschlossen / keine Daten</span>
+    </div>
+    <div id="tooltip" class="tooltip" hidden></div>
   </main>
 
   <footer id="footer"></footer>
@@ -397,6 +475,144 @@
           new Date(data.last_updated).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })));
       }
     }
+
+    /* ───────────── Statistik ───────────── */
+    const ORDER = ["vegan", "not_vegan", "unclear"];
+    const pct = (a, b) => b ? Math.round(100 * a / b) : 0;
+
+    function segBar(cls, counts, total) {
+      const bar = el("div", cls);
+      for (const s of ORDER) {
+        if (!counts[s]) continue;
+        const seg = el("span", "s-" + s);
+        seg.style.flex = String(counts[s]);
+        seg.title = `${STATUS_TEXT[s]}: ${counts[s]} (${pct(counts[s], total)} %)`;
+        bar.appendChild(seg);
+      }
+      return bar;
+    }
+
+    function showTip(e, html) {
+      const t = document.getElementById("tooltip");
+      t.innerHTML = html; t.hidden = false;
+      const r = t.getBoundingClientRect();
+      let x = e.clientX + 12, y = e.clientY + 12;
+      if (x + r.width > innerWidth - 8) x = e.clientX - r.width - 12;
+      if (y + r.height > innerHeight - 8) y = e.clientY - r.height - 12;
+      t.style.left = Math.max(8, x) + "px"; t.style.top = Math.max(8, y) + "px";
+    }
+    const hideTip = () => { document.getElementById("tooltip").hidden = true; };
+    const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+    function renderStats(hist) {
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const days = hist.days
+        .map(d => ({ ...d, dateObj: parseDate(d.date) }))
+        .filter(d => d.dateObj <= today)
+        .sort((a, b) => a.dateObj - b.dateObj);
+      const open = days.filter(d => !d.closed);
+      const counts = { vegan: 0, not_vegan: 0, unclear: 0 };
+      for (const d of open) counts[d.vegan_status] = (counts[d.vegan_status] || 0) + 1;
+
+      /* headline */
+      const hero = document.getElementById("stats-hero");
+      hero.innerHTML = "";
+      if (!open.length) { hero.appendChild(el("div", "hero-label", "Noch keine Daten.")); return; }
+      hero.appendChild(el("div", "hero-label",
+        `Seit ${fmt(days[0].dateObj, { day: "numeric", month: "long", year: "numeric" })} · ${open.length} Öffnungstage`));
+      const ans = el("div", "hero-answer");
+      ans.appendChild(el("div", "big", pct(counts.vegan, open.length) + " %"));
+      ans.appendChild(el("div", "dish-name", "der Tage gab es an Ausgabe D ein veganes Gericht"));
+      hero.appendChild(ans);
+      hero.appendChild(segBar("sharebar", counts, open.length));
+      const row = el("div", "stat-row");
+      for (const s of ORDER) {
+        const st = el("div", "stat s-" + s);
+        st.appendChild(el("div", "n", String(counts[s])));
+        const l = el("div", "l"); l.appendChild(el("i")); l.appendChild(document.createTextNode(STATUS_TEXT[s]));
+        st.appendChild(l);
+        row.appendChild(st);
+      }
+      hero.appendChild(row);
+
+      /* week grid, newest first */
+      const byWeek = new Map();
+      for (const d of days) {
+        const k = +mondayOf(d.dateObj);
+        if (!byWeek.has(k)) byWeek.set(k, new Array(5).fill(null));
+        const i = (d.dateObj.getDay() + 6) % 7;
+        if (i < 5) byWeek.get(k)[i] = d;
+      }
+      const grid = document.getElementById("week-grid");
+      grid.innerHTML = "";
+      grid.appendChild(el("div"));
+      for (const w of ["Mo", "Di", "Mi", "Do", "Fr"]) grid.appendChild(el("div", "hd", w));
+      grid.appendChild(el("div", "hd", "vegan"));
+      const keys = [...byWeek.keys()].sort((a, b) => b - a);
+      for (const k of keys) {
+        const monday = new Date(k);
+        grid.appendChild(el("div", "wk", fmt(monday, { day: "2-digit", month: "2-digit" })));
+        let v = 0, o = 0;
+        byWeek.get(k).forEach((d, i) => {
+          const dateObj = new Date(k); dateObj.setDate(dateObj.getDate() + i);
+          if (!d || dateObj > today) {
+            const c = el("div", "cell empty");
+            grid.appendChild(c);
+            return;
+          }
+          const c = el("div", "cell s-" + d.vegan_status);
+          c.innerHTML = ICONS[d.vegan_status] || "";
+          if (!d.closed) { o++; if (d.vegan_status === "vegan") v++; }
+          const dish = d.dishes[0] ? components(d.dishes[0].text)[0] : "Geschlossen";
+          const why = d.dishes[0]?.reasons?.length ? "<br>Enthält " + esc(d.dishes[0].reasons.join(", ")) : "";
+          const html = `<b>${esc(d.weekday)}, ${esc(d.date)} · ${STATUS_TEXT[d.vegan_status]}</b>${esc(dish)}${why}`;
+          c.setAttribute("aria-label", `${d.date}: ${STATUS_TEXT[d.vegan_status]}`);
+          c.addEventListener("mousemove", e => showTip(e, html));
+          c.addEventListener("mouseleave", hideTip);
+          c.addEventListener("click", e => { e.stopPropagation(); showTip(e, html); });
+          grid.appendChild(c);
+        });
+        grid.appendChild(el("div", "sum", o ? `${v}/${o}` : "–"));
+      }
+      document.getElementById("weeks-range").textContent = `${keys.length} Wochen`;
+
+      /* by weekday */
+      const wdBox = document.getElementById("weekday-bars");
+      wdBox.innerHTML = "";
+      ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"].forEach(name => {
+        const list = open.filter(d => d.weekday === name);
+        const c = { vegan: 0, not_vegan: 0, unclear: 0 };
+        for (const d of list) c[d.vegan_status]++;
+        const r = el("div", "wd-row");
+        r.appendChild(el("div", "wd", WD_SHORT[name]));
+        r.appendChild(segBar("bar", c, list.length));
+        r.appendChild(el("div", "pct", pct(c.vegan, list.length) + " %"));
+        r.title = `${name}: ${c.vegan} vegan, ${c.not_vegan} nicht vegan, ${c.unclear} unklar`;
+        wdBox.appendChild(r);
+      });
+    }
+    document.addEventListener("click", hideTip);
+
+    /* ───────────── Tabs ───────────── */
+    let statsLoaded = false;
+    function showView(view) {
+      document.querySelectorAll(".tabs button").forEach(b =>
+        b.setAttribute("aria-selected", String(b.dataset.view === view)));
+      document.getElementById("view-plan").hidden = view !== "plan";
+      document.getElementById("view-stats").hidden = view !== "stats";
+      if (view === "stats" && !statsLoaded) {
+        statsLoaded = true;
+        fetch("history.json", { cache: "no-cache" })
+          .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
+          .then(renderStats)
+          .catch(err => {
+            document.getElementById("stats-hero").textContent = "Statistik konnte nicht geladen werden: " + err.message;
+          });
+      }
+    }
+    document.querySelectorAll(".tabs button").forEach(b =>
+      b.addEventListener("click", () => { history.replaceState(null, "", b.dataset.view === "stats" ? "#statistik" : "#"); showView(b.dataset.view); }));
+    showView(location.hash === "#statistik" ? "stats" : "plan");
 
     fetch("menu.json", { cache: "no-cache" })
       .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
