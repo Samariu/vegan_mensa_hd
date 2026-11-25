@@ -3,323 +3,409 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mensa NF 304 – Ausgabe D vegan?</title>
+  <meta name="theme-color" content="#0f3d2e" />
+  <title>Vegan in der Mensa?</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --bg: #f5f3ee;
+      --surface: #ffffff;
+      --ink: #1c1f1d;
+      --muted: #6b716c;
+      --line: rgba(28, 31, 29, .08);
+      --brand: #0f3d2e;
+      --brand-ink: #e9f5ee;
+
+      --vegan: #1f8a4c;      --vegan-bg: #e4f4e9;
+      --not: #c2412d;        --not-bg: #fbe7e2;
+      --unclear: #b07a0a;    --unclear-bg: #fbf1d6;
+      --closed: #8b908c;     --closed-bg: #ecebe7;
+
+      --radius: 18px;
+      --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111412;
+        --surface: #1a1e1b;
+        --ink: #eceeea;
+        --muted: #9aa19b;
+        --line: rgba(255,255,255,.08);
+        --brand: #0b2c21;
+        --brand-ink: #d6efe0;
+        --vegan: #4cc47e;      --vegan-bg: rgba(76,196,126,.13);
+        --not: #f07a64;        --not-bg: rgba(240,122,100,.13);
+        --unclear: #e6b54a;    --unclear-bg: rgba(230,181,74,.13);
+        --closed: #8b908c;     --closed-bg: rgba(255,255,255,.05);
+        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
+      }
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f4f4f5;
-      color: #18181b;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
       min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
 
+    .wrap { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+
+    /* ── header ── */
     header {
-      background: #18181b;
-      color: #fff;
-      padding: 1.25rem 1.5rem;
+      background: var(--brand);
+      color: var(--brand-ink);
+      padding: 28px 0 88px;
     }
-    header h1 { font-size: 1.25rem; font-weight: 700; }
-    header p  { font-size: 0.85rem; color: #a1a1aa; margin-top: 0.2rem; }
-
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 1.5rem 1rem 3rem;
+    .eyebrow {
+      font-size: .75rem; font-weight: 600; letter-spacing: .12em;
+      text-transform: uppercase; opacity: .7;
+    }
+    header h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 800; font-size: clamp(1.8rem, 6vw, 2.4rem);
+      line-height: 1.1; margin-top: 6px;
     }
 
-    /* ── week block ── */
-    .week { margin-bottom: 1.5rem; }
-
-    .week-header {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #71717a;
-      margin-bottom: 0.5rem;
-    }
-    .week-header.current { color: #2563eb; }
-
-    .week-card {
-      background: #fff;
-      border-radius: 12px;
+    /* ── hero (today / next day) ── */
+    .hero {
+      margin-top: -64px;
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      position: relative;
       overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: 0 auto 0 0; width: 6px;
+      background: var(--accent, var(--closed));
+    }
+    .hero-label { font-size: .8rem; font-weight: 600; color: var(--muted); }
+    .hero-answer {
+      display: flex; align-items: center; gap: 14px;
+      margin: 10px 0 14px;
+    }
+    .hero-answer .big {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(2rem, 9vw, 2.8rem); font-weight: 800; line-height: 1;
+      color: var(--accent);
+    }
+    .hero-icon {
+      width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
+      display: grid; place-items: center;
+      background: var(--accent-bg); color: var(--accent);
+    }
+    .hero-icon svg { width: 28px; height: 28px; }
+    .hero .dish-name { font-size: 1.05rem; font-weight: 500; line-height: 1.45; }
+    .hero .dish-side { font-size: .92rem; color: var(--muted); margin-top: 2px; }
+
+    /* ── reasons + chips ── */
+    .reason {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 12px; padding: 6px 12px; border-radius: 999px;
+      background: var(--not-bg); color: var(--not);
+      font-size: .82rem; font-weight: 600;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .chip {
+      font-size: .72rem; padding: 3px 9px; border-radius: 999px;
+      background: var(--closed-bg); color: var(--muted);
+      white-space: nowrap;
+    }
+    .chip.bad { background: var(--not-bg); color: var(--not); font-weight: 600; }
+    .meta { display: flex; gap: 12px; margin-top: 14px; font-size: .82rem; color: var(--muted); }
+
+    /* ── weeks ── */
+    .week { margin-top: 32px; }
+    .week h2 {
+      font-size: .78rem; font-weight: 600; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted);
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin: 0 4px 10px;
+    }
+    .week h2 .count { letter-spacing: 0; text-transform: none; font-weight: 500; }
+    .card {
+      background: var(--surface); border-radius: var(--radius);
+      box-shadow: var(--shadow); overflow: hidden;
     }
 
-    /* ── day row ── */
-    .day-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      padding: 0.85rem 1rem;
-      border-bottom: 1px solid rgba(0,0,0,.06);
-      transition: background 0.1s;
+    .day {
+      display: grid; grid-template-columns: 52px 1fr; gap: 14px;
+      padding: 14px 16px; border-top: 1px solid var(--line);
+      cursor: pointer;
     }
-    .day-row:last-child { border-bottom: none; }
+    .day:first-child { border-top: none; }
+    .day.past { opacity: .45; }
+    .day.today { background: color-mix(in srgb, var(--accent-bg) 55%, transparent); }
 
-    .day-row.vegan     { background: #f0fdf4; }
-    .day-row.not_vegan { background: #fef2f2; }
-
-    /* today: deeper shade + coloured left bar */
-    .day-row.today.vegan     { background: #dcfce7; box-shadow: inset 3px 0 0 #15803d; }
-    .day-row.today.not_vegan { background: #fee2e2; box-shadow: inset 3px 0 0 #b91c1c; }
-    .day-row.today.unclear   { background: #eff6ff; box-shadow: inset 3px 0 0 #2563eb; }
-    .day-row.today.closed    { background: #f4f4f5; box-shadow: inset 3px 0 0 #71717a; }
-
-    /* status badge */
-    .badge {
-      flex-shrink: 0;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      font-weight: 700;
-      margin-top: 0.1rem;
+    .date {
+      width: 52px; border-radius: 12px; padding: 6px 0; text-align: center;
+      background: var(--accent-bg); color: var(--accent);
+      align-self: start;
     }
-    .badge.vegan     { background: #dcfce7; color: #15803d; }
-    .badge.not_vegan { background: #fee2e2; color: #b91c1c; }
-    .badge.unclear   { background: #fef9c3; color: #a16207; }
-    .badge.closed    { background: #f4f4f5; color: #a1a1aa; }
+    .date .wd { font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+    .date .dn { font-family: "Fraunces", Georgia, serif; font-size: 1.35rem; font-weight: 800; line-height: 1.1; }
 
-    .day-content { flex: 1; min-width: 0; }
-
-    .day-label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: #71717a;
-      margin-bottom: 0.2rem;
+    .day-body { min-width: 0; }
+    .day-top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+    .day .dish-name { font-size: .95rem; font-weight: 500; line-height: 1.4; }
+    .day .dish-side { font-size: .85rem; color: var(--muted); margin-top: 1px; }
+    .status {
+      flex-shrink: 0; font-size: .72rem; font-weight: 600;
+      color: var(--accent); white-space: nowrap;
     }
-    .today .day-label { color: #2563eb; }
+    .day .details { display: none; }
+    .day.open .details { display: block; }
+    .day .reason { margin-top: 8px; font-size: .76rem; padding: 4px 10px; }
+    .closed-text { color: var(--muted); font-style: italic; font-size: .92rem; }
 
-    .dish-text {
-      font-size: 0.9rem;
-      line-height: 1.45;
-      color: #27272a;
-      white-space: pre-line;
-    }
-    .dish-text.closed-text { color: #a1a1aa; font-style: italic; }
+    /* status → accent colours */
+    .s-vegan     { --accent: var(--vegan);   --accent-bg: var(--vegan-bg); }
+    .s-not_vegan { --accent: var(--not);     --accent-bg: var(--not-bg); }
+    .s-unclear   { --accent: var(--unclear); --accent-bg: var(--unclear-bg); }
+    .s-closed    { --accent: var(--closed);  --accent-bg: var(--closed-bg); }
 
-    .dish-price {
-      font-size: 0.78rem;
-      color: #71717a;
-      margin-top: 0.25rem;
-    }
-
-    .allergens {
-      font-size: 0.7rem;
-      color: #a1a1aa;
-      margin-top: 0.15rem;
-    }
-
-    /* ── legend ── */
     .legend {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.25rem;
-      font-size: 0.8rem;
-      color: #52525b;
+      display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: center;
+      margin: 32px 0 12px; font-size: .8rem; color: var(--muted);
     }
-    .legend span { display: flex; align-items: center; gap: 0.35rem; }
-    .dot {
-      width: 0.75rem; height: 0.75rem;
-      border-radius: 50%;
-      display: inline-block;
-    }
-    .dot.vegan     { background: #15803d; }
-    .dot.not_vegan { background: #b91c1c; }
-    .dot.unclear   { background: #a16207; }
+    .legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .legend i { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
 
-    footer {
-      text-align: center;
-      font-size: 0.75rem;
-      color: #a1a1aa;
-      padding-bottom: 2rem;
-    }
+    footer { text-align: center; font-size: .75rem; color: var(--muted); padding: 8px 16px 40px; line-height: 1.6; }
+    footer a { color: inherit; }
 
     #error-msg {
-      background: #fee2e2;
-      color: #b91c1c;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      display: none;
+      display: none; margin-top: 16px; padding: 14px 16px; border-radius: 12px;
+      background: var(--not-bg); color: var(--not);
     }
+    .skeleton { height: 180px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Mensa Neuenheimer Feld 304</h1>
-    <p>Ausgabe D – ist es vegan?</p>
+    <div class="wrap">
+      <div class="eyebrow">Mensa Im Neuenheimer Feld 304 · Ausgabe D</div>
+      <h1>Gibt's heute was Veganes?</h1>
+    </div>
   </header>
 
-  <main>
+  <main class="wrap">
+    <section class="hero skeleton" id="hero"></section>
     <div id="error-msg"></div>
+    <div id="weeks"></div>
 
     <div class="legend">
-      <span><span class="dot vegan"></span> vegan</span>
-      <span><span class="dot not_vegan"></span> nicht vegan</span>
-      <span><span class="dot unclear"></span> unklar</span>
+      <span class="s-vegan"><i></i>vegan</span>
+      <span class="s-not_vegan"><i></i>nicht vegan</span>
+      <span class="s-unclear"><i></i>unklar</span>
+      <span class="s-closed"><i></i>geschlossen</span>
     </div>
-
-    <div id="menu"></div>
-
-    <footer id="footer"></footer>
   </main>
 
-  <script>
-    const WEEKDAY_SHORT = { Montag: "Mo", Dienstag: "Di", Mittwoch: "Mi", Donnerstag: "Do", Freitag: "Fr" };
-    const STATUS_ICON   = { vegan: "✓", not_vegan: "✗", unclear: "?", closed: "–" };
+  <footer id="footer"></footer>
 
-    function parseGermanDate(s) {
+  <script>
+    const WD_SHORT = { Montag: "Mo", Dienstag: "Di", Mittwoch: "Mi", Donnerstag: "Do", Freitag: "Fr" };
+    const STATUS_TEXT = { vegan: "vegan", not_vegan: "nicht vegan", unclear: "unklar", closed: "geschlossen" };
+    const HERO_TEXT   = { vegan: "Ja, vegan!", not_vegan: "Leider nicht", unclear: "Unklar", closed: "Geschlossen" };
+    const NON_VEGAN_CODES = new Set(["ML", "Ei", "Fi", "Kr", "We", "13", "14", "15", "16"]);
+    const ICONS = {
+      vegan: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+      not_vegan: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>',
+      unclear: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9.2 9a3 3 0 1 1 4.2 2.8c-.9.4-1.4 1.1-1.4 2v.7"/><circle cx="12" cy="18" r=".6" fill="currentColor"/></svg>',
+      closed: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M7 12h10"/></svg>',
+    };
+
+    const el = (tag, cls, text) => {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (text != null) e.textContent = text;
+      return e;
+    };
+
+    function parseDate(s) {
       const [d, m, y] = s.split(".").map(Number);
       return new Date(y, m - 1, d);
     }
 
-    function isoWeekKey(date) {
+    function mondayOf(date) {
       const d = new Date(date);
+      d.setDate(d.getDate() - (d.getDay() + 6) % 7);
       d.setHours(0, 0, 0, 0);
-      d.setDate(d.getDate() + 3 - (d.getDay() + 6) % 7);
-      const jan4 = new Date(d.getFullYear(), 0, 4);
-      const week = 1 + Math.round(((d - jan4) / 864e5 - 3 + (jan4.getDay() + 6) % 7) / 7);
-      const yr = date.getMonth() === 0 && week > 50 ? date.getFullYear() - 1
-               : date.getMonth() === 11 && week < 3  ? date.getFullYear() + 1
-               : date.getFullYear();
-      return `${yr}-W${String(week).padStart(2, "0")}`;
+      return d;
     }
 
-    function todayKey() {
-      const t = new Date(); t.setHours(0, 0, 0, 0);
-      return isoWeekKey(t);
+    const fmt = (d, opts) => d.toLocaleDateString("de-DE", opts);
+
+    /* Split "Gnocchi mit X (3,GlWe,ML)\nSalat (Sf)" into clean component names
+       without the code lists. First line = main dish, rest = sides. */
+    function components(text) {
+      return text.split(/\n|<br\s*\/?>/i)
+        .map(l => l.replace(/\s*\([^)]*\)\s*/g, " ").replace(/\s+/g, " ").trim())
+        .filter(Boolean);
     }
 
-    function formatShortDate(dateObj) {
-      return dateObj.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" });
+    function dishBlock(dish, withDetails) {
+      const frag = document.createDocumentFragment();
+      const [main, ...sides] = components(dish.text);
+      frag.appendChild(el("div", "dish-name", main || dish.text));
+      for (const s of sides) frag.appendChild(el("div", "dish-side", "+ " + s));
+      return frag;
+    }
+
+    function detailsBlock(dish) {
+      const box = el("div", "details");
+      if (dish.vegan_status === "not_vegan" && dish.reasons?.length) {
+        box.appendChild(el("div", "reason", "Enthält " + dish.reasons.join(", ")));
+      }
+      const codes = dish.codes || [];
+      if (codes.length) {
+        const chips = el("div", "chips");
+        for (const c of codes) {
+          chips.appendChild(el("span", "chip" + (NON_VEGAN_CODES.has(c.code) ? " bad" : ""), c.label));
+        }
+        box.appendChild(chips);
+      }
+      if (dish.price_studi) {
+        const meta = el("div", "meta");
+        meta.appendChild(el("span", null, dish.price_studi.replace(".", ",") + " € für Studis"));
+        box.appendChild(meta);
+      }
+      return box;
+    }
+
+    function renderHero(day, today) {
+      const hero = document.getElementById("hero");
+      hero.classList.remove("skeleton");
+      hero.innerHTML = "";
+      if (!day) {
+        hero.className = "hero s-closed";
+        hero.appendChild(el("div", "hero-label", "Keine Daten"));
+        hero.appendChild(el("div", "dish-name", "Für die kommenden Tage ist noch kein Speiseplan veröffentlicht."));
+        return;
+      }
+      hero.className = "hero s-" + day.vegan_status;
+      const isToday = +day.dateObj === +today;
+      const label = isToday
+        ? "Heute, " + fmt(day.dateObj, { weekday: "long", day: "numeric", month: "long" })
+        : "Nächster Mensatag: " + fmt(day.dateObj, { weekday: "long", day: "numeric", month: "long" });
+      hero.appendChild(el("div", "hero-label", label));
+
+      const ans = el("div", "hero-answer");
+      const icon = el("div", "hero-icon");
+      icon.innerHTML = ICONS[day.vegan_status] || ICONS.unclear;
+      ans.appendChild(icon);
+      ans.appendChild(el("div", "big", HERO_TEXT[day.vegan_status] || "Unklar"));
+      hero.appendChild(ans);
+
+      if (day.closed) {
+        hero.appendChild(el("div", "closed-text", "Die Mensa hat an diesem Tag geschlossen."));
+        return;
+      }
+      for (const dish of day.dishes) {
+        hero.appendChild(dishBlock(dish));
+        const d = detailsBlock(dish);
+        d.style.display = "block";
+        hero.appendChild(d);
+      }
+      if (day.vegan_status === "unclear") {
+        hero.appendChild(el("div", "dish-side",
+          "Kein Vegan-Label, aber auch keine tierischen Allergene angegeben – im Zweifel an der Theke nachfragen."));
+      }
     }
 
     function render(data) {
       const today = new Date(); today.setHours(0, 0, 0, 0);
-      const curWeek = todayKey();
+      const thisMonday = mondayOf(today);
+      const days = data.days
+        .map(d => ({ ...d, dateObj: parseDate(d.date) }))
+        .filter(d => d.dateObj >= thisMonday)
+        .sort((a, b) => a.dateObj - b.dateObj);
 
-      // group by week, showing only today and future days
+      renderHero(days.find(d => d.dateObj >= today), today);
+
       const weeks = new Map();
-      for (const day of data.days.filter(d => parseGermanDate(d.date) >= today)) {
-        const dateObj = parseGermanDate(day.date);
-        const key = isoWeekKey(dateObj);
-        if (!weeks.has(key)) weeks.set(key, []);
-        weeks.get(key).push({ ...day, dateObj });
+      for (const d of days) {
+        const k = +mondayOf(d.dateObj);
+        if (!weeks.has(k)) weeks.set(k, []);
+        weeks.get(k).push(d);
       }
 
-      const sortedKeys = [...weeks.keys()].sort();
+      const container = document.getElementById("weeks");
+      for (const [k, list] of weeks) {
+        const monday = new Date(k);
+        const friday = new Date(k); friday.setDate(friday.getDate() + 4);
+        const isThis = k === +thisMonday;
+        const veganCount = list.filter(d => d.vegan_status === "vegan").length;
+        const open = list.filter(d => !d.closed).length;
 
-      // find the first week that is >= current week (to scroll to it)
-      const activeWeek = sortedKeys.find(k => k >= curWeek) || sortedKeys[sortedKeys.length - 1];
+        const sec = el("section", "week");
+        const h = el("h2");
+        h.appendChild(el("span", null,
+          (isThis ? "Diese Woche" : k === +thisMonday + 7 * 864e5 ? "Nächste Woche" : "Woche") +
+          " · " + fmt(monday, { day: "numeric", month: "numeric" }) + "–" + fmt(friday, { day: "numeric", month: "numeric" })));
+        if (open) h.appendChild(el("span", "count", `${veganCount} von ${open} Tagen vegan`));
+        sec.appendChild(h);
 
-      const container = document.getElementById("menu");
+        const card = el("div", "card");
+        for (const day of list) {
+          const isToday = +day.dateObj === +today;
+          const row = el("div", `day s-${day.vegan_status}` + (isToday ? " today" : "") + (day.dateObj < today ? " past" : ""));
 
-      for (const key of sortedKeys) {
-        const days = weeks.get(key).sort((a, b) => a.dateObj - b.dateObj);
-        const isCurrent = key === activeWeek;
+          const date = el("div", "date");
+          date.appendChild(el("div", "wd", isToday ? "Heute" : (WD_SHORT[day.weekday] || day.weekday)));
+          date.appendChild(el("div", "dn", String(day.dateObj.getDate())));
+          row.appendChild(date);
 
-        const dates = days.map(d => d.dateObj);
-        const from = formatShortDate(dates[0]);
-        const to   = formatShortDate(dates[dates.length - 1]);
-
-        const section = document.createElement("div");
-        section.className = "week";
-        if (isCurrent) section.id = "current-week";
-
-        const hdr = document.createElement("div");
-        hdr.className = "week-header" + (isCurrent ? " current" : "");
-        hdr.textContent = isCurrent
-          ? `▶ Diese Woche  ${from} – ${to}`
-          : `Woche  ${from} – ${to}`;
-        section.appendChild(hdr);
-
-        const card = document.createElement("div");
-        card.className = "week-card";
-
-        for (const day of days) {
-          const isToday = day.dateObj.getTime() === today.getTime();
-          const row = document.createElement("div");
-          row.className = `day-row ${day.vegan_status}${isToday ? " today" : ""}`;
-
-          const badge = document.createElement("div");
-          badge.className = `badge ${day.vegan_status}`;
-          badge.textContent = STATUS_ICON[day.vegan_status] ?? "?";
-
-          const content = document.createElement("div");
-          content.className = "day-content";
-
-          const label = document.createElement("div");
-          label.className = "day-label";
-          label.textContent = `${WEEKDAY_SHORT[day.weekday] ?? day.weekday}  ${day.date.slice(0, 5)}`;
-          if (isToday) label.textContent += "  ← heute";
-          content.appendChild(label);
-
+          const body = el("div", "day-body");
           if (day.closed) {
-            const txt = document.createElement("div");
-            txt.className = "dish-text closed-text";
-            txt.textContent = "Geschlossen";
-            content.appendChild(txt);
+            const top = el("div", "day-top");
+            top.appendChild(el("div", "closed-text", "Geschlossen"));
+            body.appendChild(top);
           } else {
-            for (const dish of day.dishes) {
-              const txt = document.createElement("div");
-              txt.className = "dish-text";
-              // show only first line to keep it compact; full text on title
-              const firstLine = dish.text.split("\n")[0];
-              txt.textContent = firstLine;
-              txt.title = dish.text;
-              content.appendChild(txt);
-
-              if (dish.price_studi) {
-                const price = document.createElement("div");
-                price.className = "dish-price";
-                price.textContent = dish.price_studi.replace(".", ",") + " € (Studi)";
-                content.appendChild(price);
-              }
-
-              if (dish.allergens) {
-                const alg = document.createElement("div");
-                alg.className = "allergens";
-                alg.textContent = "Allergene: " + dish.allergens;
-                content.appendChild(alg);
-              }
-            }
+            day.dishes.forEach((dish, i) => {
+              const top = el("div", "day-top");
+              const names = el("div");
+              names.appendChild(dishBlock(dish));
+              top.appendChild(names);
+              if (i === 0) top.appendChild(el("span", "status", STATUS_TEXT[day.vegan_status]));
+              body.appendChild(top);
+              body.appendChild(detailsBlock(dish));
+            });
+            row.addEventListener("click", () => row.classList.toggle("open"));
+            row.title = "Antippen für Details";
           }
-
-          row.appendChild(badge);
-          row.appendChild(content);
+          row.appendChild(body);
           card.appendChild(row);
         }
-
-        section.appendChild(card);
-        container.appendChild(section);
+        sec.appendChild(card);
+        container.appendChild(sec);
       }
 
+      const foot = document.getElementById("footer");
+      foot.appendChild(el("div", null,
+        "Klassifiziert anhand der Allergen- und Zusatzstoff-Kennzeichnung des Studierendenwerks. Ohne Gewähr."));
       if (data.last_updated) {
-        const dt = new Date(data.last_updated);
-        document.getElementById("footer").textContent =
-          "Zuletzt aktualisiert: " + dt.toLocaleString("de-DE");
+        foot.appendChild(el("div", null, "Zuletzt aktualisiert: " +
+          new Date(data.last_updated).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })));
       }
-
-      // smooth-scroll to current week
-      const target = document.getElementById("current-week");
-      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
-    fetch("menu.json")
+    fetch("menu.json", { cache: "no-cache" })
       .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
       .then(render)
       .catch(err => {
-        const el = document.getElementById("error-msg");
-        el.textContent = "Menüdaten konnten nicht geladen werden: " + err.message;
-        el.style.display = "block";
+        document.getElementById("hero").style.display = "none";
+        const e = document.getElementById("error-msg");
+        e.textContent = "Menüdaten konnten nicht geladen werden: " + err.message;
+        e.style.display = "block";
       });
   </script>
 </body>
