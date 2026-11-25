@@ -19,11 +19,16 @@ MENSA_URL="<the stw.uni-heidelberg.de page URL>" python scraper.py
 
 ## Vegan classification logic
 
+Codes are collected from **every** parenthetical group in the German and English text (`scraper.py:extract_codes`), not just the last one: Ausgabe D dishes often have several components on separate lines, each with its own code list (e.g. `Gnocchi mit Rahmkürbis (3,5,GlWe,ML)\nWeißkrautsalat (3,5,Sf)`). Codes are normalised (`+ML`, `Ml` → `ML`) against `CODE_LEGEND`, which mirrors the official legend on the Studierendenwerk menu page.
+
 `scraper.py:classify_vegan` applies in order:
 
-1. **vegan** — the word "vegan" appears anywhere in the German text, English text, or allergen string.
-2. **not_vegan** — allergen codes `ML` (milk), `Ei` (egg), `Fi` (fish), or `Kr` (crustaceans) are present.
-3. **unclear** — everything else (plant-based but no explicit "vegan" label and no disqualifying allergens).
+1. **not_vegan** — any animal-product code: `ML` (milk), `Ei`, `Fi`, `Kr`, `We` (molluscs), `13`–`16` (pork, poultry, beef, game). Beats a "vegan" label.
+2. **vegan** — `vegan` code, or the word vegan/vegane/veganer… in the text.
+3. **not_vegan** — no vegan label, but the description names an animal product (`NON_VEGAN_WORDS`: Käse, Sahne, Hähnchen, …).
+4. **unclear** — everything else.
+
+Each dish in `menu.json` also carries `codes` (`[{code, label}]`) and `reasons` (why it is not vegan), which the page shows.
 
 The day-level `vegan_status` is `vegan` if any dish is vegan, `not_vegan` if any dish is not vegan (and none is vegan), otherwise `unclear`.
 
