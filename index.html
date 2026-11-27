@@ -26,8 +26,11 @@
       --brand: #0f3d2e;
       --brand-ink: #e9f5ee;
 
-      --vegan: #1a7f64;      --vegan-bg: #e0f2ec;
-      --not: #d9532b;        --not-bg: #fbe6de;
+      /* Spinat-Grün (dunkel) vs. Fleisch-Rot (hell, leicht bläulich): the big
+         lightness gap keeps them apart for red-green colour blindness;
+         checked with the dataviz palette validator (all CVD types). */
+      --vegan: #356b2a;      --vegan-bg: #e5efdf;
+      --not: #e5486e;        --not-bg: #fce4ea;
       --unclear: #b8860b;    --unclear-bg: #fbf1d6;
       --closed: #8b908c;     --closed-bg: #ecebe7;
 
@@ -43,9 +46,9 @@
         --line: rgba(255,255,255,.08);
         --brand: #0b2c21;
         --brand-ink: #d6efe0;
-        --vegan: #2a9d80;      --vegan-bg: rgba(42,157,128,.16);
-        --not: #e8663c;        --not-bg: rgba(232,102,60,.15);
-        --unclear: #cfa634;    --unclear-bg: rgba(207,166,52,.15);
+        --vegan: #4a8f3c;      --vegan-bg: rgba(74,143,60,.18);
+        --not: #f5607d;        --not-bg: rgba(245,96,125,.15);
+        --unclear: #c29a26;    --unclear-bg: rgba(194,154,38,.15);
         --closed: #8b908c;     --closed-bg: rgba(255,255,255,.05);
         --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
       }
@@ -148,7 +151,6 @@
       cursor: pointer;
     }
     .day:first-child { border-top: none; }
-    .day.past { opacity: .45; }
     .day.today { background: color-mix(in srgb, var(--accent-bg) 55%, transparent); }
 
     .date {
@@ -444,7 +446,7 @@
       const thisMonday = mondayOf(today);
       const days = data.days
         .map(d => ({ ...d, dateObj: parseDate(d.date) }))
-        .filter(d => d.dateObj >= thisMonday)
+        .filter(d => d.dateObj >= today)
         .sort((a, b) => a.dateObj - b.dateObj);
 
       renderHero(days.find(d => d.dateObj >= today), today);
@@ -475,7 +477,7 @@
         const card = el("div", "card");
         for (const day of list) {
           const isToday = +day.dateObj === +today;
-          const row = el("div", `day s-${day.vegan_status}` + (isToday ? " today" : "") + (day.dateObj < today ? " past" : ""));
+          const row = el("div", `day s-${day.vegan_status}` + (isToday ? " today" : ""));
 
           const date = el("div", "date");
           date.appendChild(el("div", "wd", isToday ? "Heute" : (WD_SHORT[day.weekday] || day.weekday)));
